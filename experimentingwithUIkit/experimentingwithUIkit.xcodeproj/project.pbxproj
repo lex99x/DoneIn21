@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51058613284509F4005D25C0 /* cardDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51058612284509F4005D25C0 /* cardDetail.swift */; };
 		512DC98C282D9EBF0056C81A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512DC98B282D9EBF0056C81A /* AppDelegate.swift */; };
 		512DC98E282D9EBF0056C81A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512DC98D282D9EBF0056C81A /* SceneDelegate.swift */; };
 		512DC990282D9EBF0056C81A /* check.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512DC98F282D9EBF0056C81A /* check.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		51058612284509F4005D25C0 /* cardDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardDetail.swift; sourceTree = "<group>"; };
 		512DC988282D9EBF0056C81A /* experimentingwithUIkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = experimentingwithUIkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		512DC98B282D9EBF0056C81A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		512DC98D282D9EBF0056C81A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 			children = (
 				512DC98B282D9EBF0056C81A /* AppDelegate.swift */,
 				51D3BC54283C6A510001CAFE /* ViewController2.swift */,
+				51058612284509F4005D25C0 /* cardDetail.swift */,
 				512DC98D282D9EBF0056C81A /* SceneDelegate.swift */,
 				512DC98F282D9EBF0056C81A /* check.swift */,
 				51E78B58283EC21C005CF8F3 /* cardcell.swift */,
@@ -144,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51058613284509F4005D25C0 /* cardDetail.swift in Sources */,
 				512DC990282D9EBF0056C81A /* check.swift in Sources */,
 				51D3BC55283C6A510001CAFE /* ViewController2.swift in Sources */,
 				512DC98C282D9EBF0056C81A /* AppDelegate.swift in Sources */,

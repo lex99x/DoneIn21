@@ -4,15 +4,35 @@ import UIKit
 class check: UIViewController {
 
     @IBOutlet weak var itsDoneButton: UIButton!
+    @IBOutlet weak var checkimage: UIImageView!
+    @IBOutlet weak var exercises: UICollectionView!
     
-
     var cards:[CardDetail] = []
     var selectedCard : CardDetail = CardDetail()
     var isGrenn = false
+    let shape = CAShapeLayer()
     
-    @IBOutlet weak var exercises: UICollectionView!
+   
+   
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let circlePath = UIBezierPath(arcCenter:CGPoint(x: 193, y: 271), radius: 100, startAngle: -(.pi / 2), endAngle: .pi * 2, clockwise: true)
+        
+        let trackshape = CAShapeLayer()
+        trackshape.path = circlePath.cgPath
+        trackshape.fillColor = UIColor.clear.cgColor
+        trackshape.lineWidth = 15
+        trackshape.strokeColor = UIColor.systemGray3.cgColor
+        view.layer.addSublayer(trackshape)
+
+        shape.path = circlePath.cgPath
+        shape.lineWidth = 15
+        shape.strokeColor = UIColor.systemGreen.cgColor
+        shape.fillColor = UIColor.clear.cgColor
+        shape.strokeEnd = 0
+        view.layer.addSublayer(shape)
+
         exercises.dataSource = self
         exercises.delegate = self
         cards = [
@@ -23,14 +43,20 @@ class check: UIViewController {
        
     }
 
-    
-   
     @IBAction func trocaCor(_ sender: Any) {
+        let animation = CABasicAnimation(keyPath: "strokeEnd")
+        animation.toValue = 1
+        animation.duration = 1.3
+        animation.isRemovedOnCompletion = false
+        animation.fillMode = .forwards
+        shape.add(animation, forKey: "animation")
+        
         if isGrenn {
             
         }
         else {
             itsDoneButton.backgroundColor = UIColor.systemGreen
+            checkimage.tintColor = UIColor.systemGreen
         }
     }
     

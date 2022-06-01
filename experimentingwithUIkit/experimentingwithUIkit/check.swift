@@ -3,9 +3,11 @@ import UIKit
 
 class check: UIViewController {
 
- 
+    @IBOutlet weak var itsDoneButton: UIButton!
+    
     var cards:[CardDetail] = []
     var selectedCard : CardDetail = CardDetail()
+    var isGrenn = false
     
     @IBOutlet weak var exercises: UICollectionView!
     override func viewDidLoad() {
@@ -19,6 +21,15 @@ class check: UIViewController {
        
     }
     
+   
+    @IBAction func trocaCor(_ sender: Any) {
+        if isGrenn {
+            
+        }
+        else {
+            itsDoneButton.backgroundColor = UIColor.systemGreen
+        }
+    }
     
     
 }

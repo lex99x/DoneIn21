@@ -159,6 +159,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kvs-gy-UOw">
+                                <rect key="frame" x="132" y="400" width="132" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="It's Done">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="28"/>
+                                    <color key="baseForegroundColor" systemColor="systemBackgroundColor"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="trocaCor:" destination="g7J-yF-gah" eventType="touchUpInside" id="aaG-67-uOp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="H31-k3-llE"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
@@ -166,6 +183,7 @@
                     <navigationItem key="navigationItem" title="Dia 1 de 21" id="d7f-Ix-rQN"/>
                     <connections>
                         <outlet property="exercises" destination="GFH-6y-Ygx" id="XzL-tm-Lfq"/>
+                        <outlet property="itsDoneButton" destination="Kvs-gy-UOw" id="AAX-uk-qcY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mtB-WK-o6h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

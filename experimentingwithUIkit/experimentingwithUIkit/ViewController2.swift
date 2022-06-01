@@ -21,8 +21,11 @@ class ExerciseDetail: UIViewController {
         benefits.text = clickedCard.benefits
     }
 
+  
+    @IBAction func IdidButton(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
-   
   
     
 

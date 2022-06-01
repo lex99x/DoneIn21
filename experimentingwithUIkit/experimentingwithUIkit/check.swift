@@ -5,6 +5,7 @@ class check: UIViewController {
 
     @IBOutlet weak var itsDoneButton: UIButton!
     
+
     var cards:[CardDetail] = []
     var selectedCard : CardDetail = CardDetail()
     var isGrenn = false
@@ -18,8 +19,10 @@ class check: UIViewController {
             CardDetail(exercisename: "Yoga", whatIs: "exercicio de respiracao", benefits: "e muito bom confia", cardname: "Yoga",background: .systemGray5),
             CardDetail(exercisename: "andar", whatIs: "e andar ora", benefits: "e muito bom pro", cardname: "andar",background: .systemGray5)
         ]
+      
        
     }
+
     
    
     @IBAction func trocaCor(_ sender: Any) {

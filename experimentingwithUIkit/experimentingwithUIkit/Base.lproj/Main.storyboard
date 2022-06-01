@@ -147,7 +147,6 @@
                                         <connections>
                                             <outlet property="cardview" destination="xUw-DO-Rqm" id="Bf8-Cj-k8s"/>
                                             <outlet property="name" destination="0RN-x7-85R" id="v3H-h6-1Ow"/>
-                                            <segue destination="4uL-qa-QRq" kind="presentation" identifier="showdetail" id="mRU-oa-y7c"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -184,6 +183,7 @@
                     <connections>
                         <outlet property="exercises" destination="GFH-6y-Ygx" id="XzL-tm-Lfq"/>
                         <outlet property="itsDoneButton" destination="Kvs-gy-UOw" id="AAX-uk-qcY"/>
+                        <segue destination="4uL-qa-QRq" kind="presentation" identifier="showdetail" id="tGw-kq-Ntw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mtB-WK-o6h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -286,6 +286,9 @@
                                 <buttonConfiguration key="configuration" style="filled" title="i Did">
                                     <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="IdidButton:" destination="4uL-qa-QRq" eventType="touchUpInside" id="1JO-Po-eQf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="goF-KC-i7p"/>

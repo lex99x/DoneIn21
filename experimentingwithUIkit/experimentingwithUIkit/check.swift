@@ -1,11 +1,12 @@
 import UIKit
 
 
-class check: UIViewController {
+class Check: UIViewController {
 
     @IBOutlet weak var itsDoneButton: UIButton!
     @IBOutlet weak var checkimage: UIImageView!
     @IBOutlet weak var exercises: UICollectionView!
+    
     
     var cards:[CardDetail] = []
     var selectedCard : CardDetail = CardDetail()
@@ -28,7 +29,7 @@ class check: UIViewController {
 
         shape.path = circlePath.cgPath
         shape.lineWidth = 15
-        shape.strokeColor = UIColor.systemGreen.cgColor
+        shape.strokeColor = UIColor(named:"DoneIn21Green")?.cgColor
         shape.fillColor = UIColor.clear.cgColor
         shape.strokeEnd = 0
         view.layer.addSublayer(shape)
@@ -36,34 +37,39 @@ class check: UIViewController {
         exercises.dataSource = self
         exercises.delegate = self
         cards = [
-            CardDetail(exercisename: "Yoga", whatIs: "exercicio de respiracao", benefits: "e muito bom confia", cardname: "Yoga",background: .systemGray5),
-            CardDetail(exercisename: "andar", whatIs: "e andar ora", benefits: "e muito bom pro", cardname: "andar",background: .systemGray5)
+            CardDetail(exercisename: "Yoga", whatIs: "exercicio de respiracao", benefits: "e muito bom confia", cardname: "Yoga",background: .systemGray5,cardImage: UIImage(named: "yoga")!),
+            CardDetail(exercisename: "andar", whatIs: "e andar ora", benefits: "e muito bom pro", cardname: "andar",background: .systemGray5,cardImage: UIImage(systemName: "square.and.arrow.up.circle")!)
         ]
       
        
     }
 
     @IBAction func trocaCor(_ sender: Any) {
-        let animation = CABasicAnimation(keyPath: "strokeEnd")
-        animation.toValue = 1
-        animation.duration = 1.3
-        animation.isRemovedOnCompletion = false
-        animation.fillMode = .forwards
-        shape.add(animation, forKey: "animation")
+      
         
         if isGrenn {
             
         }
         else {
-            itsDoneButton.backgroundColor = UIColor.systemGreen
-            checkimage.tintColor = UIColor.systemGreen
+            itsDoneButton.backgroundColor = UIColor(named: "DoneIn21Green")
+            checkimage.tintColor = UIColor(named: "DoneIn21Green")
+    
+            let animation = CABasicAnimation(keyPath: "strokeEnd")
+            animation.toValue = 1
+            animation.duration = 1.3
+            animation.isRemovedOnCompletion = false
+            animation.fillMode = .forwards
+            shape.add(animation, forKey: "animation")
+            
+            isGrenn = true
+            
         }
     }
     
     
 }
 
-extension check:UICollectionViewDataSource{
+extension Check:UICollectionViewDataSource{
     
 func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     return cards.count
@@ -78,7 +84,7 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
 }
 
 }
-extension check: UICollectionViewDelegate{
+extension Check: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         selectedCard = cards[indexPath.item]
         performSegue(withIdentifier: "showdetail", sender: self)

@@ -10,10 +10,15 @@ class cardcell:UICollectionViewCell{
     
     @IBOutlet weak var name: UILabel!
     
-     func draw (card:CardDetail){
+    @IBOutlet weak var imagemCard: UIImageView!
+    func draw (card:CardDetail){
     
          name.text = card.exercisename
-        
+        imagemCard.image = card.cardImage
+//         if card.cardname == "andar"{
+//             imagemCard.image = UIImage(systemName: "figure.walk")
+//
+//         }
         
     }
      

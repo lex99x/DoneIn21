@@ -4,9 +4,9 @@ import UIKit
 class Check: UIViewController {
 
     @IBOutlet weak var itsDoneButton: UIButton!
-    @IBOutlet weak var checkimage: UIImageView!
     @IBOutlet weak var exercises: UICollectionView!
     
+    @IBOutlet weak var umdevinte: UILabel!
     
     var cards:[CardDetail] = []
     var selectedCard : CardDetail = CardDetail()
@@ -18,15 +18,17 @@ class Check: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let circlePath = UIBezierPath(arcCenter:CGPoint(x: 193, y: 271), radius: 100, startAngle: -(.pi / 2), endAngle: .pi * 2, clockwise: true)
+        let circlePath = UIBezierPath(arcCenter:CGPoint(x: 195, y: 340), radius: 100, startAngle: -(.pi / 2), endAngle: .pi * 2, clockwise: true)
         
         let trackshape = CAShapeLayer()
         trackshape.path = circlePath.cgPath
-        trackshape.fillColor = UIColor.clear.cgColor
+        trackshape.fillColor = UIColor(named: "DoneIn21Blue")?.cgColor
         trackshape.lineWidth = 15
         trackshape.strokeColor = UIColor.systemGray3.cgColor
+        trackshape.zPosition = 0
         view.layer.addSublayer(trackshape)
-
+        umdevinte.layer.zPosition = 1
+        
         shape.path = circlePath.cgPath
         shape.lineWidth = 15
         shape.strokeColor = UIColor(named:"DoneIn21Green")?.cgColor
@@ -52,7 +54,6 @@ class Check: UIViewController {
         }
         else {
             itsDoneButton.backgroundColor = UIColor(named: "DoneIn21Green")
-            checkimage.tintColor = UIColor(named: "DoneIn21Green")
     
             let animation = CABasicAnimation(keyPath: "strokeEnd")
             animation.toValue = 1

@@ -61,7 +61,6 @@ class Check: UIViewController {
         else {
             itsDoneButton.tintColor = UIColor(named: "DoneIn21Green")
             itsDoneButton.backgroundColor = UIColor(named: "DoneIn21Green")
-//            view.backgroundColor = UIColor(named: "DoneIn21Green")
             let animation = CABasicAnimation(keyPath: "strokeEnd")
             animation.toValue = 1
             animation.duration = 1.3

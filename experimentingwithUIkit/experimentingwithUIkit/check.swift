@@ -100,7 +100,8 @@ extension Check: UICollectionViewDelegate{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc : ExerciseDetail = segue.destination as! ExerciseDetail
         vc.clickedCard = selectedCard
-        print(selectedCard)
+//        print(selectedCard)
+        
     }
 }
 

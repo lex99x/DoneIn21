@@ -15,7 +15,7 @@ class cardcell:UICollectionViewCell{
     
         name.text = card.exercisename
         imagemCard.image = card.cardImage
-        cardview.backgroundColor = UIColor(named: "DoneIn21Blue")
+        cardview.backgroundColor = card.backgroundColor
 
         
     }

@@ -4,12 +4,13 @@ import UIKit
 
 class ExerciseDetail: UIViewController {
 
+    @IBOutlet weak var IdidButton: UIButton!
     
     @IBOutlet weak var exercisename: UILabel!
     
     @IBOutlet weak var whatIs: UITextView!
     
-    @IBOutlet weak var benefits: UILabel!
+    @IBOutlet weak var benefits: UITextView!
     
     var clickedCard:CardDetail = CardDetail()
     
@@ -23,6 +24,7 @@ class ExerciseDetail: UIViewController {
 
   
     @IBAction func IdidButton(_ sender: Any) {
+        IdidButton.backgroundColor = UIColor.systemGreen
         dismiss(animated: true, completion: nil)
     }
     

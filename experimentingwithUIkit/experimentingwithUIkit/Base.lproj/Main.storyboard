@@ -327,7 +327,7 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8xE-Tz-hL0">
                                         <rect key="frame" x="0.0" y="0.0" width="354" height="233"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <color key="textColor" systemColor="systemBackgroundColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -357,7 +357,10 @@
                     <connections>
                         <outlet property="IdidButton" destination="9Jy-e4-9o0" id="ytg-qp-9Bs"/>
                         <outlet property="benefits" destination="8xE-Tz-hL0" id="wVb-Rp-h7Q"/>
+                        <outlet property="detailImage" destination="UGQ-4a-OoS" id="Iap-IZ-EkK"/>
                         <outlet property="exercisename" destination="QPG-jn-LyZ" id="SNA-lw-oAk"/>
+                        <outlet property="scrollBenefits" destination="ETS-dj-mFV" id="zeR-jO-6ze"/>
+                        <outlet property="scrollwhatIs" destination="Kou-vF-tUM" id="B6S-aZ-V3N"/>
                         <outlet property="whatIs" destination="wWw-Zp-BW2" id="Ik8-kL-NbX"/>
                     </connections>
                 </viewController>

@@ -2,7 +2,6 @@ import UIKit
 
 
 class Check: UIViewController {
-// ajkdnjandjandjkakdbabd maluca
     @IBOutlet weak var itsDoneButton: UIButton!
     
     @IBOutlet weak var exercises: UICollectionView!
@@ -53,7 +52,6 @@ class Check: UIViewController {
     }
 
     @IBAction func trocaCor(_ sender: Any) {
-      //jdhjkgdhsgfhdgfhs
         
         if isGrenn {
             
@@ -99,7 +97,6 @@ extension Check: UICollectionViewDelegate{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let vc : ExerciseDetail = segue.destination as! ExerciseDetail
         vc.clickedCard = selectedCard
-//        print(selectedCard)
         
     }
 }

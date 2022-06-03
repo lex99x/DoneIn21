@@ -53,7 +53,7 @@ class Check: UIViewController {
     }
 
     @IBAction func trocaCor(_ sender: Any) {
-      
+      //jdhjkgdhsgfhdgfhs
         
         if isGrenn {
             

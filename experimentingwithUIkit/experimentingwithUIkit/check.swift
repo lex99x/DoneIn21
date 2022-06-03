@@ -2,7 +2,7 @@ import UIKit
 
 
 class Check: UIViewController {
-
+// ajkdnjandjandjkakdbabd maluca
     @IBOutlet weak var itsDoneButton: UIButton!
     
     @IBOutlet weak var exercises: UICollectionView!

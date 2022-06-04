@@ -3,9 +3,7 @@ import UIKit
 
 class Check: UIViewController {
     @IBOutlet weak var itsDoneButton: UIButton!
-    
     @IBOutlet weak var exercises: UICollectionView!
-    
     @IBOutlet weak var umdevinte: UILabel!
     
     var cards:[CardDetail] = []
@@ -17,9 +15,8 @@ class Check: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+
         let circlePath = UIBezierPath(arcCenter:CGPoint(x: 195, y: 340), radius: 100, startAngle: -(.pi / 2), endAngle: .pi * 2, clockwise: true)
-        
         let trackshape = CAShapeLayer()
         trackshape.path = circlePath.cgPath
         trackshape.fillColor = UIColor(named: "DoneIn21Orange")?.cgColor
@@ -38,14 +35,13 @@ class Check: UIViewController {
 
         exercises.dataSource = self
         exercises.delegate = self
+        
         cards = [
             CardDetail(exercisename: "Yoga", whatIs: "It is a safe and useful activity for everyone and can help improve general flexibility, neuromuscular coordination, balance and postural awareness.\n\nStretching performed with a volume of 30 to 60 seconds increases joint Range of Motion in most adults, being enough to improve flexibility", benefits: "Consistent joint movement can decrease the risk of injury in activities of daily living, and relieve pain from chronic conditions such as back pain or osteoarthritis.\n\nThey influence both the mind and the body. A prolonged stretching routine can be an excellent method of relaxation and an excellent stress reducer.", cardname: "Yoga",background: UIColor(named: "DoneIn21Blue")!,cardImage: UIImage(named: "yoga")!,detailImage: UIImage(named: "yogam")!),
-            CardDetail(exercisename: "Walk", whatIs: "e andar ora", benefits: "e muito bom pro", cardname: "andar",background: UIColor(named: "DoneIn21Orange")!,cardImage: UIImage(named: "yoga")!,detailImage: UIImage(named: "yogam")!),
-            CardDetail(exercisename: "Pushups", whatIs: "description", benefits: "benefits a lot of the,", cardname: "Pushups", background: UIColor(named: "DoneIn21Blue")!, cardImage: UIImage(named: "flexao")!,detailImage: UIImage(named: "yogam")!),
-            CardDetail(exercisename: "Stretching", whatIs: "description", benefits: "benefits", cardname: "Stretching", background: UIColor(named: "DoneIn21Orange")!, cardImage: UIImage(named: "alongamento")!,detailImage: UIImage(named: "yogam")!),
-            CardDetail(exercisename: "Abs", whatIs: "Description", benefits: "benefits", cardname: "Abs", background: UIColor(named: "DoneIn21Blue")!, cardImage: UIImage(named: "abdominal")!,detailImage: UIImage(named: "yogam")!)
-            
-            
+            CardDetail(exercisename: "Walk", whatIs: "e andar ora", benefits: "e muito bom pro", cardname: "andar",background: UIColor(named: "DoneIn21Orange")!,cardImage: UIImage(named: "andar")!,detailImage: UIImage(named: "andarm")!),
+            CardDetail(exercisename: "Pushups", whatIs: "description", benefits: "benefits a lot of the,", cardname: "Pushups", background: UIColor(named: "DoneIn21Blue")!, cardImage: UIImage(named: "flexao")!,detailImage: UIImage(named: "flexaom")!),
+            CardDetail(exercisename: "Stretching", whatIs: "description", benefits: "benefits", cardname: "Stretching", background: UIColor(named: "DoneIn21Orange")!, cardImage: UIImage(named: "alongamento")!,detailImage: UIImage(named: "alongamentom")!),
+            CardDetail(exercisename: "Abs", whatIs: "Description", benefits: "benefits", cardname: "Abs", background: UIColor(named: "DoneIn21Blue")!, cardImage: UIImage(named: "abdominal")!,detailImage: UIImage(named: "absm")!)
         ]
       
        
@@ -65,10 +61,17 @@ class Check: UIViewController {
             animation.isRemovedOnCompletion = false
             animation.fillMode = .forwards
             shape.add(animation, forKey: "animation")
-            
             isGrenn = true
-            
+           
+
         }
+    }
+    @IBAction func FaqButton(_ sender: Any) {
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let FAQ = storyBoard.instantiateViewController(withIdentifier: "Faq") as! Faq
+//        self.present(FAQ, animated: true, completion: nil)
+        self.navigationController?.pushViewController(FAQ, animated: true)
     }
     
     
@@ -99,6 +102,6 @@ extension Check: UICollectionViewDelegate{
         vc.clickedCard = selectedCard
         
     }
+    
 }
 
-// fjdfhdgfhdgf

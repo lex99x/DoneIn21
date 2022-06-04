@@ -32,11 +32,11 @@
             </objects>
             <point key="canvasLocation" x="-357" y="1150"/>
         </scene>
-        <!--check-->
+        <!--Rewards-->
         <scene sceneID="1Q5-xk-V1A">
             <objects>
                 <navigationController id="O49-2a-c4I" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="check" image="checkmark.seal" catalog="system" id="8TR-xm-hdw"/>
+                    <tabBarItem key="tabBarItem" title="Rewards" image="circle.dashed" catalog="system" id="8TR-xm-hdw"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="G64-Xv-9fD">
                         <rect key="frame" x="0.0" y="44" width="390" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -48,31 +48,34 @@
                         </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="g7J-yF-gah" kind="relationship" relationship="rootViewController" id="dWO-qx-bDL"/>
+                        <segue destination="2oX-Mi-XU4" kind="relationship" relationship="rootViewController" id="HCn-Dx-Iag"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xxT-Rg-Jhg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-358" y="2281"/>
         </scene>
-        <!--rewards-->
+        <!--Check-->
         <scene sceneID="hcD-Kg-U3J">
             <objects>
                 <navigationController id="ipr-Dt-MmT" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="rewards" id="8Fu-ZP-kqg">
-                        <imageReference key="image" image="circle.dashed" catalog="system" symbolScale="default"/>
+                    <tabBarItem key="tabBarItem" title="Check" id="8Fu-ZP-kqg">
+                        <imageReference key="image" image="checkmark.seal" catalog="system" symbolScale="default"/>
                     </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="HjV-ag-286">
                         <rect key="frame" x="0.0" y="44" width="390" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
-                        <segue destination="2oX-Mi-XU4" kind="relationship" relationship="rootViewController" id="hEq-3V-G8s"/>
+                        <segue destination="g7J-yF-gah" kind="relationship" relationship="rootViewController" id="Elc-Ut-FPG"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sVU-yT-04d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1133" y="2281"/>
+            <point key="canvasLocation" x="-2649" y="2281"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="mmi-na-OlR">
@@ -90,7 +93,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3pB-gc-Sv6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1133.3333333333335" y="2976.5625"/>
+            <point key="canvasLocation" x="1500" y="2990.7582938388623"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="6zE-XM-1CH">
@@ -106,7 +109,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ryT-f7-z2M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="409" y="3020"/>
+            <point key="canvasLocation" x="1400" y="2281"/>
         </scene>
         <!--Done in 21-->
         <scene sceneID="wJ6-K2-KCu">
@@ -216,6 +219,9 @@
                         <barButtonItem key="rightBarButtonItem" title="question" style="plain" id="oC8-yg-Pz7">
                             <imageReference key="image" image="questionmark.circle" catalog="system" symbolScale="large"/>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="FaqButton:" destination="g7J-yF-gah" id="U5k-bu-azf"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
@@ -228,7 +234,82 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mtB-WK-o6h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-326.15384615384613" y="2976.5402843601896"/>
+            <point key="canvasLocation" x="-2649" y="3052"/>
+        </scene>
+        <!--Faq-->
+        <scene sceneID="sbc-Ts-fud">
+            <objects>
+                <viewController storyboardIdentifier="Faq" id="AqA-nC-CX5" customClass="Faq" customModule="experimentingwithUIkit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CBG-Yt-fBx">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="faq" translatesAutoresizingMaskIntoConstraints="NO" id="0bX-na-qeK">
+                                <rect key="frame" x="16" y="486" width="358" height="302"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Gun-um-MVh">
+                                <rect key="frame" x="20" y="364" width="350" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="4qx-Ol-Vgs" customClass="Textcell" customModule="experimentingwithUIkit" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="350" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4qx-Ol-Vgs" id="W5p-ND-NX5">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IlD-bN-pzb">
+                                                    <rect key="frame" x="20" y="11" width="310" height="27"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="fzg-DS-C7X">
+                                                    <rect key="frame" x="317" y="16.66666666666606" width="22" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="tintColor" systemColor="labelColor"/>
+                                                </imageView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="question" destination="IlD-bN-pzb" id="Ooi-Uu-rKz"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="18"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="c3j-Wo-3Fm">
+                                <rect key="frame" x="75" y="98" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FAQ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZdA-ph-4ur">
+                                <rect key="frame" x="145" y="265" width="101" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="labelColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kgC-Fb-F9j"/>
+                        <color key="backgroundColor" name="DoneIn21Orange"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ipd-M8-sYG"/>
+                    <connections>
+                        <outlet property="questiontableview" destination="Gun-um-MVh" id="456-bA-8H5"/>
+                        <segue destination="1lv-J4-JcS" kind="presentation" identifier="showQuestionDetail" id="pXe-Hc-udf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UQd-DJ-Lo3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1880" y="3051.8957345971562"/>
         </scene>
         <!--Exercise Detail-->
         <scene sceneID="0Yu-IX-Hbb">
@@ -292,7 +373,7 @@
                                     <action selector="IdidButton:" destination="4uL-qa-QRq" eventType="touchUpInside" id="1JO-Po-eQf"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="abdominal1x" translatesAutoresizingMaskIntoConstraints="NO" id="UGQ-4a-OoS">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flexao" translatesAutoresizingMaskIntoConstraints="NO" id="UGQ-4a-OoS">
                                 <rect key="frame" x="8" y="21" width="374" height="747"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -366,7 +447,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YqF-rg-Loz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-326.15384615384613" y="3707.345971563981"/>
+            <point key="canvasLocation" x="-2649" y="3815"/>
         </scene>
         <!--calendar-->
         <scene sceneID="an9-hl-V4F">
@@ -385,13 +466,84 @@
             </objects>
             <point key="canvasLocation" x="410" y="2281"/>
         </scene>
+        <!--Faq Detail-->
+        <scene sceneID="e1k-u1-wAa">
+            <objects>
+                <viewController id="1lv-J4-JcS" customClass="FaqDetail" customModule="experimentingwithUIkit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YWJ-eX-6sX">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="oquee" translatesAutoresizingMaskIntoConstraints="NO" id="niu-Ux-0Yr">
+                                <rect key="frame" x="16" y="486" width="358" height="302"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Qqi-uf-fCP">
+                                <rect key="frame" x="75" y="98" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="FAQ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GVI-L5-XAZ">
+                                <rect key="frame" x="145" y="265" width="101" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" systemColor="labelColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9lk-zc-fYz">
+                                <rect key="frame" x="24" y="338" width="340" height="231"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Whats is the 21 day theory?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9t9-jc-LIY">
+                                        <rect key="frame" x="8" y="21" width="275" height="27"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IlH-kE-1nd">
+                                        <rect key="frame" x="8" y="56" width="324" height="157"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <string key="text">Consistent joint movement can decrease the risk of injury in activities of daily living, and relieve pain from chronic conditions such as back pain or osteoarthritis. They influence both the mind and the body. A prolonged stretching routine can be an excellent method of relaxation and an excellent stress reducer.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mtw-7T-JYX"/>
+                        <color key="backgroundColor" name="DoneIn21Blue"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fJ7-l1-4wx"/>
+                    <connections>
+                        <outlet property="answer" destination="IlH-kE-1nd" id="s37-8d-VVx"/>
+                        <outlet property="backview" destination="9lk-zc-fYz" id="crd-X7-dGt"/>
+                        <outlet property="imagebackground" destination="niu-Ux-0Yr" id="bYH-sc-YLI"/>
+                        <outlet property="questionTitle" destination="9t9-jc-LIY" id="6w9-8b-S3K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2vc-tm-v8v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1078.4615384615383" y="3051.8957345971562"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="abdominal1x" width="245" height="134"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="checkmark.seal" catalog="system" width="128" height="128"/>
+        <image name="chevron.right" catalog="system" width="96" height="128"/>
         <image name="circle.dashed" catalog="system" width="128" height="121"/>
         <image name="clock.arrow.circlepath" catalog="system" width="128" height="110"/>
+        <image name="faq" width="414" height="380"/>
+        <image name="flexao" width="245" height="117"/>
+        <image name="logo" width="150" height="148"/>
+        <image name="oquee" width="414" height="353"/>
         <image name="questionmark.circle" catalog="system" width="128" height="121"/>
         <namedColor name="DoneIn21Blue">
             <color red="0.12549019607843137" green="0.23529411764705882" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -399,6 +551,9 @@
         <namedColor name="DoneIn21Orange">
             <color red="0.94509803921568625" green="0.51372549019607838" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

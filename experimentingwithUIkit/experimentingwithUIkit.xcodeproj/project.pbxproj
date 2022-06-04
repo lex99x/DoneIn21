@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		173C8E2C284BA0290004513F /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 173C8E2B284BA0290004513F /* Intro.storyboard */; };
 		179D5739284A5CD8006E9927 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179D5738284A5CD8006E9927 /* LaunchScreen.storyboard */; };
 		51058613284509F4005D25C0 /* cardDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51058612284509F4005D25C0 /* cardDetail.swift */; };
 		512DC98C282D9EBF0056C81A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512DC98B282D9EBF0056C81A /* AppDelegate.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		173C8E2B284BA0290004513F /* Intro.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
 		179D5738284A5CD8006E9927 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51058612284509F4005D25C0 /* cardDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardDetail.swift; sourceTree = "<group>"; };
 		512DC988282D9EBF0056C81A /* experimentingwithUIkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = experimentingwithUIkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +78,7 @@
 				51E7421E284BBAF3000AFD39 /* DetailScreen */,
 				51E7421D284BBAD4000AFD39 /* check  */,
 				512DC991282D9EBF0056C81A /* Main.storyboard */,
+				173C8E2B284BA0290004513F /* Intro.storyboard */,
 				512DC994282D9EC00056C81A /* Assets.xcassets */,
 				512DC999282D9EC00056C81A /* Info.plist */,
 				179D5738284A5CD8006E9927 /* LaunchScreen.storyboard */,
@@ -173,6 +176,7 @@
 				179D5739284A5CD8006E9927 /* LaunchScreen.storyboard in Resources */,
 				512DC995282D9EC00056C81A /* Assets.xcassets in Resources */,
 				512DC993282D9EBF0056C81A /* Main.storyboard in Resources */,
+				173C8E2C284BA0290004513F /* Intro.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

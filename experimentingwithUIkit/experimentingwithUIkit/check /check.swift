@@ -2,22 +2,25 @@ import UIKit
 
 
 class Check: UIViewController {
+  
+
     @IBOutlet weak var itsDoneButton: UIButton!
     @IBOutlet weak var exercises: UICollectionView!
     @IBOutlet weak var umdevinte: UILabel!
     
+    var daysCount:Int = 1
     var cards:[CardDetail] = []
     var selectedCard : CardDetail = CardDetail()
     var isGrenn = false
     let shape = CAShapeLayer()
-    
+    let trackshape = CAShapeLayer()
     
    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+       
         let circlePath = UIBezierPath(arcCenter:CGPoint(x: 195, y: 340), radius: 100, startAngle: -(.pi / 2), endAngle: .pi * 2, clockwise: true)
-        let trackshape = CAShapeLayer()
+        
         trackshape.path = circlePath.cgPath
         trackshape.fillColor = UIColor(named: "DoneIn21Orange")?.cgColor
         trackshape.lineWidth = 15
@@ -55,6 +58,7 @@ class Check: UIViewController {
         else {
             itsDoneButton.tintColor = UIColor(named: "DoneIn21Green")
             itsDoneButton.backgroundColor = UIColor(named: "DoneIn21Green")
+            shape.strokeColor = UIColor(named:"DoneIn21Green")?.cgColor
             let animation = CABasicAnimation(keyPath: "strokeEnd")
             animation.toValue = 1
             animation.duration = 1.3
@@ -62,9 +66,23 @@ class Check: UIViewController {
             animation.fillMode = .forwards
             shape.add(animation, forKey: "animation")
             isGrenn = true
-           
-
+            itsDoneButton.isEnabled = false
+            daysCount += 1
+            umdevinte.text = "\(daysCount) de 21"
+            if daysCount == 21 {daysCount = 0}
+            let timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false) { timer in
+                print("timerAtivado")
+                self.itsDoneButton.tintColor = UIColor(named: "DoneIn21Blue")
+                self.itsDoneButton.backgroundColor = UIColor(named: "DoneIn21Blue")
+                self.itsDoneButton.isEnabled = true
+                self.shape.strokeColor = UIColor.systemGray3.cgColor
+                self.isGrenn = false
+                
+              
+            }
+          
         }
+        
     }
     @IBAction func FaqButton(_ sender: Any) {
         
@@ -73,8 +91,7 @@ class Check: UIViewController {
 //        self.present(FAQ, animated: true, completion: nil)
         self.navigationController?.pushViewController(FAQ, animated: true)
     }
-    
-    
+
 }
 
 extension Check:UICollectionViewDataSource{

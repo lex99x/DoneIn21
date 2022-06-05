@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D40-t7-qlA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="clE-UN-jFC">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -194,13 +196,14 @@ to be called?</string>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="StV-st-iN3">
-                                <rect key="frame" x="309" y="660" width="85" height="31"/>
+                                <rect key="frame" x="283" y="660" width="111" height="37"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="31" id="4Ml-AN-eU9"/>
-                                    <constraint firstAttribute="width" constant="85" id="x3a-Ij-zLW"/>
+                                    <constraint firstAttribute="height" constant="37" id="4Ml-AN-eU9"/>
+                                    <constraint firstAttribute="width" constant="111" id="x3a-Ij-zLW"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Continue">
+                                <buttonConfiguration key="configuration" style="filled" title="Continue" buttonSize="small">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
                                     <color key="baseBackgroundColor" name="DoneIn21Blue"/>
                                 </buttonConfiguration>
                             </button>
@@ -234,13 +237,222 @@ to be called?</string>
                 <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="SFa-LK-bks" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yo2-Zs-oVA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="91" y="-597"/>
+            <point key="canvasLocation" x="-652" y="-602"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BwZ-Tn-EqN">
+            <objects>
+                <viewController id="clE-UN-jFC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YbX-zn-za1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="nK5-KB-Pme">
+                                <rect key="frame" x="0.0" y="44" width="414" height="165"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icone" translatesAutoresizingMaskIntoConstraints="NO" id="ez8-Dv-gFb">
+                                        <rect key="frame" x="20" y="0.0" width="46" height="165"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="46" id="HAf-sL-ROs"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello, User! " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18L-3C-vzf">
+                                        <rect key="frame" x="86" y="0.0" width="328" height="165"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <size key="shadowOffset" width="1" height="1"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="DoneIn21Blue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="165" id="MMB-ni-OGd"/>
+                                </constraints>
+                                <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="0.0"/>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your new habit:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gI4-j9-o0A">
+                                <rect key="frame" x="11.5" y="259" width="391" height="43"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="391" id="g9C-df-6EM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="WBy-Vo-UdM">
+                                <rect key="frame" x="19.5" y="352" width="375" height="393"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="aoo-oa-Bmd"/>
+                                    <constraint firstAttribute="height" constant="393" id="hcQ-r1-ay4"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="0DE-Jq-m94">
+                                    <size key="itemSize" width="177" height="188"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="HFl-aS-s3J">
+                                        <rect key="frame" x="0.0" y="0.0" width="177" height="188"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qWx-JS-TDT">
+                                            <rect key="frame" x="0.0" y="0.0" width="177" height="188"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exercicios" translatesAutoresizingMaskIntoConstraints="NO" id="J1G-73-Xga">
+                                                    <rect key="frame" x="0.0" y="0.0" width="177" height="188"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gC2-AB-Mkp">
+                                                    <rect key="frame" x="12" y="156" width="78" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="J1G-73-Xga" firstAttribute="height" secondItem="qWx-JS-TDT" secondAttribute="height" id="37G-fo-AUK"/>
+                                                <constraint firstItem="J1G-73-Xga" firstAttribute="centerY" secondItem="qWx-JS-TDT" secondAttribute="centerY" id="8fD-Hy-W3U"/>
+                                                <constraint firstAttribute="bottom" secondItem="gC2-AB-Mkp" secondAttribute="bottom" constant="8" id="CVH-Cm-lej"/>
+                                                <constraint firstItem="gC2-AB-Mkp" firstAttribute="leading" secondItem="qWx-JS-TDT" secondAttribute="leading" constant="12" id="J1v-rA-B5D"/>
+                                                <constraint firstItem="J1G-73-Xga" firstAttribute="width" secondItem="qWx-JS-TDT" secondAttribute="width" id="Onn-f3-9f2"/>
+                                                <constraint firstItem="J1G-73-Xga" firstAttribute="centerX" secondItem="qWx-JS-TDT" secondAttribute="centerX" id="nqb-lB-Vuj"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" name="DoneIn21Blue"/>
+                                        <size key="customSize" width="177" height="188"/>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="5BC-6g-QuV">
+                                        <rect key="frame" x="198" y="0.0" width="177" height="188"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3Mg-Dp-ASA">
+                                            <rect key="frame" x="0.0" y="0.0" width="177" height="188"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alimentos" translatesAutoresizingMaskIntoConstraints="NO" id="Wp6-dC-rN7">
+                                                    <rect key="frame" x="0.0" y="0.0" width="177" height="188"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Healthy meals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vem-30-ac4">
+                                                    <rect key="frame" x="12" y="156" width="130.5" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Vem-30-ac4" secondAttribute="bottom" constant="8" id="0I4-Pp-5fQ"/>
+                                                <constraint firstItem="Wp6-dC-rN7" firstAttribute="centerY" secondItem="3Mg-Dp-ASA" secondAttribute="centerY" id="5tf-el-bMF"/>
+                                                <constraint firstItem="Wp6-dC-rN7" firstAttribute="width" secondItem="3Mg-Dp-ASA" secondAttribute="width" id="Xgt-d6-X8a"/>
+                                                <constraint firstItem="Vem-30-ac4" firstAttribute="leading" secondItem="3Mg-Dp-ASA" secondAttribute="leading" constant="12" id="blO-Bw-3OK"/>
+                                                <constraint firstItem="Wp6-dC-rN7" firstAttribute="height" secondItem="3Mg-Dp-ASA" secondAttribute="height" id="hMg-X4-srM"/>
+                                                <constraint firstItem="Wp6-dC-rN7" firstAttribute="centerX" secondItem="3Mg-Dp-ASA" secondAttribute="centerX" id="rTv-9w-Y0i"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" name="DoneIn21Orange"/>
+                                        <size key="customSize" width="177" height="188"/>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="DUP-lR-2BY">
+                                        <rect key="frame" x="0.0" y="198" width="177" height="188"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="HSQ-ah-DyI">
+                                            <rect key="frame" x="0.0" y="0.0" width="177" height="188"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="agua" translatesAutoresizingMaskIntoConstraints="NO" id="Ul7-zH-Hga">
+                                                    <rect key="frame" x="0.0" y="0.0" width="177" height="188"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drink water" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D01-Oy-gLu">
+                                                    <rect key="frame" x="12" y="156" width="105.5" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ul7-zH-Hga" firstAttribute="centerY" secondItem="HSQ-ah-DyI" secondAttribute="centerY" id="7Ey-py-Gru"/>
+                                                <constraint firstAttribute="bottom" secondItem="D01-Oy-gLu" secondAttribute="bottom" constant="8" id="Bki-p4-0BK"/>
+                                                <constraint firstItem="Ul7-zH-Hga" firstAttribute="height" secondItem="HSQ-ah-DyI" secondAttribute="height" id="Pco-HB-RQ2"/>
+                                                <constraint firstItem="D01-Oy-gLu" firstAttribute="leading" secondItem="HSQ-ah-DyI" secondAttribute="leading" constant="12" id="c3n-Ac-QcA"/>
+                                                <constraint firstItem="Ul7-zH-Hga" firstAttribute="width" secondItem="HSQ-ah-DyI" secondAttribute="width" id="d82-Ig-GNk"/>
+                                                <constraint firstItem="Ul7-zH-Hga" firstAttribute="centerX" secondItem="HSQ-ah-DyI" secondAttribute="centerX" id="sGZ-ek-OYe"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" name="DoneIn21Orange"/>
+                                        <size key="customSize" width="177" height="188"/>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bCX-iK-HSt">
+                                        <rect key="frame" x="198" y="198" width="177" height="188"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="CmD-i3-Sp3">
+                                            <rect key="frame" x="0.0" y="0.0" width="177" height="188"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="estudos" translatesAutoresizingMaskIntoConstraints="NO" id="N4p-4C-oxv">
+                                                    <rect key="frame" x="0.0" y="0.0" width="177" height="188"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Focus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a0K-sR-W83">
+                                                    <rect key="frame" x="12" y="156" width="55.5" height="24"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="a0K-sR-W83" secondAttribute="bottom" constant="8" id="4O0-Zl-LoX"/>
+                                                <constraint firstItem="N4p-4C-oxv" firstAttribute="width" secondItem="CmD-i3-Sp3" secondAttribute="width" id="6uz-Op-lgN"/>
+                                                <constraint firstItem="N4p-4C-oxv" firstAttribute="centerY" secondItem="CmD-i3-Sp3" secondAttribute="centerY" id="DHc-CH-V9h"/>
+                                                <constraint firstItem="N4p-4C-oxv" firstAttribute="centerX" secondItem="CmD-i3-Sp3" secondAttribute="centerX" id="Eil-ly-U29"/>
+                                                <constraint firstItem="N4p-4C-oxv" firstAttribute="height" secondItem="CmD-i3-Sp3" secondAttribute="height" id="fie-zS-FE6"/>
+                                                <constraint firstItem="a0K-sR-W83" firstAttribute="leading" secondItem="CmD-i3-Sp3" secondAttribute="leading" constant="12" id="j58-de-5vp"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" name="DoneIn21Blue"/>
+                                        <size key="customSize" width="177" height="188"/>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F71-13-JCv">
+                                <rect key="frame" x="19.5" y="795" width="375" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="5yA-LD-6bz"/>
+                                </constraints>
+                                <buttonConfiguration key="configuration" style="filled" title="Start now!" buttonSize="small">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                    <color key="baseBackgroundColor" name="DoneIn21Blue"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ozZ-T2-H2T"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nK5-KB-Pme" firstAttribute="centerX" secondItem="YbX-zn-za1" secondAttribute="centerX" id="0EO-ER-1ks"/>
+                            <constraint firstItem="WBy-Vo-UdM" firstAttribute="centerX" secondItem="YbX-zn-za1" secondAttribute="centerX" id="OOn-Tc-WWI"/>
+                            <constraint firstItem="gI4-j9-o0A" firstAttribute="top" secondItem="nK5-KB-Pme" secondAttribute="bottom" constant="50" id="OUm-wm-Mnr"/>
+                            <constraint firstItem="gI4-j9-o0A" firstAttribute="centerX" secondItem="YbX-zn-za1" secondAttribute="centerX" id="Seh-eb-KrV"/>
+                            <constraint firstItem="F71-13-JCv" firstAttribute="centerX" secondItem="WBy-Vo-UdM" secondAttribute="centerX" id="Tre-Ek-Xy7"/>
+                            <constraint firstItem="gI4-j9-o0A" firstAttribute="centerX" secondItem="YbX-zn-za1" secondAttribute="centerX" id="WuE-MK-iPq"/>
+                            <constraint firstItem="nK5-KB-Pme" firstAttribute="top" secondItem="ozZ-T2-H2T" secondAttribute="top" id="bbP-jz-2Gu"/>
+                            <constraint firstItem="F71-13-JCv" firstAttribute="top" secondItem="WBy-Vo-UdM" secondAttribute="bottom" constant="50" id="pSk-sM-otX"/>
+                            <constraint firstItem="F71-13-JCv" firstAttribute="width" secondItem="WBy-Vo-UdM" secondAttribute="width" id="rfE-de-cks"/>
+                            <constraint firstItem="WBy-Vo-UdM" firstAttribute="top" secondItem="gI4-j9-o0A" secondAttribute="bottom" constant="50" id="rkU-y8-gQI"/>
+                            <constraint firstItem="nK5-KB-Pme" firstAttribute="width" secondItem="YbX-zn-za1" secondAttribute="width" id="zkW-Ff-dWj"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vhs-fn-mdS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1628.985507246377" y="73.660714285714278"/>
         </scene>
     </scenes>
     <resources>
+        <image name="agua" width="177" height="150"/>
+        <image name="alimentos" width="177" height="147"/>
         <image name="done" width="321" height="315"/>
         <image name="eai" width="413" height="248"/>
         <image name="escadinha" width="414" height="414"/>
+        <image name="estudos" width="177" height="112"/>
+        <image name="exercicios" width="177" height="116"/>
+        <image name="icone" width="57.5" height="55"/>
         <image name="logo" width="150" height="148"/>
         <namedColor name="DoneIn21Blue">
             <color red="0.12549019607843137" green="0.23529411764705882" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -251,5 +463,8 @@ to be called?</string>
         <namedColor name="DoneIn21Orange">
             <color red="0.94509803921568625" green="0.51372549019607838" blue="0.094117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

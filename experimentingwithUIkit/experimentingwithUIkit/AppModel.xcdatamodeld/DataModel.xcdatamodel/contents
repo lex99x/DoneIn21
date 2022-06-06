@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="App" representedClassName="App" syncable="YES" codeGenerationType="class">
-        <attribute name="checkFlag" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="onboardFlag" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+    <entity name="Day" representedClassName="Day" syncable="YES" codeGenerationType="class">
+        <attribute name="checkFlag" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="dayNumber" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
     </entity>
     <entity name="User" representedClassName="User" syncable="YES" codeGenerationType="class">
         <attribute name="age" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="App" positionX="-63" positionY="-9" width="128" height="59"/>
+        <element name="App" positionX="-63" positionY="-9" width="128" height="44"/>
         <element name="User" positionX="-54" positionY="0" width="128" height="14"/>
+        <element name="Day" positionX="-36" positionY="27" width="128" height="59"/>
     </elements>
 </model>

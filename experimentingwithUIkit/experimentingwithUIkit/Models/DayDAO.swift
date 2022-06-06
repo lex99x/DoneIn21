@@ -36,7 +36,7 @@ class DayDAO: DayModel {
         
     }
     
-    public func readDays(appDelegate: AppDelegate) -> [NSManagedObject] {
+    public static func readDays(appDelegate: AppDelegate) -> [NSManagedObject] {
         
         var days: [NSManagedObject] = []
         
@@ -53,12 +53,6 @@ class DayDAO: DayModel {
         }
         
         print("Dias lidos com sucesso!")
-        
-//        for day in days {
-//            
-//            print(day.value(forKey: "dayNumber"), day.value(forKey: "checkFlag"))
-//            
-//        }
         
         return days
         

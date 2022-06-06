@@ -9,17 +9,19 @@ class Check: UIViewController {
     @IBOutlet weak var exercises: UICollectionView!
     @IBOutlet weak var umdevinte: UILabel!
     
-    var daysCount:Int = 1
+    var daysCount = 1
     var cards:[CardDetail] = []
     var selectedCard : CardDetail = CardDetail()
     var isGrenn = false
     let shape = CAShapeLayer()
     let trackshape = CAShapeLayer()
     
-    override func viewDidLoad() {
-        
+    override func viewWillAppear(_ animated: Bool) {
         self.appDelegate = UIApplication.shared.delegate as? AppDelegate
-        
+//        daysCount = DayDAO.readDays(appDelegate: appDelegate).count
+    }
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
        
         let circlePath = UIBezierPath(arcCenter:CGPoint(x: 195, y: 340), radius: 100, startAngle: -(.pi / 2), endAngle: .pi * 2, clockwise: true)
@@ -62,7 +64,6 @@ class Check: UIViewController {
             let dayDAO = DayDAO(dayNumber: daysCount, checkFlag: !isGrenn)
             
             dayDAO.saveDay(appDelegate: appDelegate)
-            dayDAO.readDays(appDelegate: appDelegate)
             
             itsDoneButton.tintColor = UIColor(named: "DoneIn21Green")
             itsDoneButton.backgroundColor = UIColor(named: "DoneIn21Green")

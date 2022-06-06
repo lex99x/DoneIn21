@@ -7,8 +7,8 @@
 
 import UIKit
 
-class IntroViewController: UIViewController {
-
+class OnboardViewController: UIViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

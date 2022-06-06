@@ -7,6 +7,10 @@ class Faq: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationItem.leftBarButtonItem = nil
+        navigationItem.hidesBackButton = true
+        
         questiontableview.delegate = self
         questiontableview.dataSource = self
         questions = [

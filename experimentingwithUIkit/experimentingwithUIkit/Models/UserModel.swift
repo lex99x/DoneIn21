@@ -5,7 +5,7 @@
 //  Created by Alex A. Rocha on 05/06/22.
 //
 
-class User {
+class UserModel {
     
     private var name: String
     private var age: Int

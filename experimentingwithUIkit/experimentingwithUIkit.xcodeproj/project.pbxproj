@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		17159387284D19CB00CAAE80 /* CustomHabitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17159386284D19CB00CAAE80 /* CustomHabitCell.swift */; };
 		1715938A284D3B9000CAAE80 /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17159389284D3B9000CAAE80 /* OnboardViewController.swift */; };
-		1715938D284D3C5700CAAE80 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1715938C284D3C5700CAAE80 /* User.swift */; };
+		1715938D284D3C5700CAAE80 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1715938C284D3C5700CAAE80 /* UserModel.swift */; };
 		1715938F284D850000CAAE80 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1715938E284D850000CAAE80 /* CustomTextField.swift */; };
 		17159391284D88A500CAAE80 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17159390284D88A500CAAE80 /* CustomButton.swift */; };
 		17159393284D8A6900CAAE80 /* CustomOnboardLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17159392284D8A6900CAAE80 /* CustomOnboardLabel.swift */; };
@@ -33,7 +33,7 @@
 /* Begin PBXFileReference section */
 		17159386284D19CB00CAAE80 /* CustomHabitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHabitCell.swift; sourceTree = "<group>"; };
 		17159389284D3B9000CAAE80 /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
-		1715938C284D3C5700CAAE80 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		1715938C284D3C5700CAAE80 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		1715938E284D850000CAAE80 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		17159390284D88A500CAAE80 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		17159392284D8A6900CAAE80 /* CustomOnboardLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOnboardLabel.swift; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		1715938B284D3C3500CAAE80 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1715938C284D3C5700CAAE80 /* User.swift */,
+				1715938C284D3C5700CAAE80 /* UserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -233,7 +233,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1715938F284D850000CAAE80 /* CustomTextField.swift in Sources */,
-				1715938D284D3C5700CAAE80 /* User.swift in Sources */,
+				1715938D284D3C5700CAAE80 /* UserModel.swift in Sources */,
 				1715938A284D3B9000CAAE80 /* OnboardViewController.swift in Sources */,
 				17159393284D8A6900CAAE80 /* CustomOnboardLabel.swift in Sources */,
 				17159397284DA59800CAAE80 /* AppModel.xcdatamodeld in Sources */,

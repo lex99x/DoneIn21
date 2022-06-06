@@ -10,8 +10,9 @@ class CardDetail
     var backgroundColor : UIColor
     var cardImage : UIImage
     var detailImage : UIImage
+    var time : String
     
-    init (exercisename:String,whatIs:String,benefits:String,cardname:String,background:UIColor,cardImage:UIImage,detailImage:UIImage){
+    init (exercisename:String,whatIs:String,benefits:String,cardname:String,background:UIColor,cardImage:UIImage,detailImage:UIImage,time:String){
         self.exercisename = exercisename
         self.whatIs = whatIs
         self.benefits = benefits
@@ -19,6 +20,7 @@ class CardDetail
         self.backgroundColor = background
         self.cardImage = cardImage
         self.detailImage = detailImage
+        self.time = time
     }
     init(){
         self.exercisename = ""
@@ -28,6 +30,7 @@ class CardDetail
         self.backgroundColor = UIColor.systemGray5
         self.cardImage = UIImage(systemName: "figure.walk")!
         self.detailImage = UIImage(systemName: "figure.walk")!
+        self.time = "10-15"
     }
 
 }

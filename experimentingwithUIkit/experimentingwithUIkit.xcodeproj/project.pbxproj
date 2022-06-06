@@ -14,6 +14,8 @@
 		17159391284D88A500CAAE80 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17159390284D88A500CAAE80 /* CustomButton.swift */; };
 		17159393284D8A6900CAAE80 /* CustomOnboardLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17159392284D8A6900CAAE80 /* CustomOnboardLabel.swift */; };
 		17159397284DA59800CAAE80 /* AppModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17159395284DA59800CAAE80 /* AppModel.xcdatamodeld */; };
+		17159399284DB78300CAAE80 /* DayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17159398284DB78300CAAE80 /* DayModel.swift */; };
+		1715939B284DB8FE00CAAE80 /* DayDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1715939A284DB8FE00CAAE80 /* DayDAO.swift */; };
 		173C8E2C284BA0290004513F /* Onboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 173C8E2B284BA0290004513F /* Onboard.storyboard */; };
 		179D5739284A5CD8006E9927 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179D5738284A5CD8006E9927 /* LaunchScreen.storyboard */; };
 		51058613284509F4005D25C0 /* cardDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51058612284509F4005D25C0 /* cardDetail.swift */; };
@@ -38,6 +40,8 @@
 		17159390284D88A500CAAE80 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		17159392284D8A6900CAAE80 /* CustomOnboardLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOnboardLabel.swift; sourceTree = "<group>"; };
 		17159396284DA59800CAAE80 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		17159398284DB78300CAAE80 /* DayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayModel.swift; sourceTree = "<group>"; };
+		1715939A284DB8FE00CAAE80 /* DayDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDAO.swift; sourceTree = "<group>"; };
 		173C8E2B284BA0290004513F /* Onboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboard.storyboard; sourceTree = "<group>"; };
 		179D5738284A5CD8006E9927 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51058612284509F4005D25C0 /* cardDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardDetail.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 			isa = PBXGroup;
 			children = (
 				1715938C284D3C5700CAAE80 /* UserModel.swift */,
+				17159398284DB78300CAAE80 /* DayModel.swift */,
+				1715939A284DB8FE00CAAE80 /* DayDAO.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -236,6 +242,7 @@
 				1715938D284D3C5700CAAE80 /* UserModel.swift in Sources */,
 				1715938A284D3B9000CAAE80 /* OnboardViewController.swift in Sources */,
 				17159393284D8A6900CAAE80 /* CustomOnboardLabel.swift in Sources */,
+				1715939B284DB8FE00CAAE80 /* DayDAO.swift in Sources */,
 				17159397284DA59800CAAE80 /* AppModel.xcdatamodeld in Sources */,
 				51058613284509F4005D25C0 /* cardDetail.swift in Sources */,
 				51E74221284BE9C6000AFD39 /* FAQtextcell.swift in Sources */,
@@ -244,6 +251,7 @@
 				51E74223284BEA9A000AFD39 /* QuestionDetail.swift in Sources */,
 				51D3BC55283C6A510001CAFE /* ViewController2.swift in Sources */,
 				512DC98C282D9EBF0056C81A /* AppDelegate.swift in Sources */,
+				17159399284DB78300CAAE80 /* DayModel.swift in Sources */,
 				51D5BAB7284BAFA8006205D7 /* FAQ.swift in Sources */,
 				512DC98E282D9EBF0056C81A /* SceneDelegate.swift in Sources */,
 				51E78B59283EC21C005CF8F3 /* cardcell.swift in Sources */,

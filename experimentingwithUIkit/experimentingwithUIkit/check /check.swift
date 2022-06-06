@@ -3,6 +3,7 @@ import UIKit
 
 class Check: UIViewController {
   
+    private var appDelegate: AppDelegate!
 
     @IBOutlet weak var itsDoneButton: UIButton!
     @IBOutlet weak var exercises: UICollectionView!
@@ -15,8 +16,10 @@ class Check: UIViewController {
     let shape = CAShapeLayer()
     let trackshape = CAShapeLayer()
     
-   
     override func viewDidLoad() {
+        
+        self.appDelegate = UIApplication.shared.delegate as? AppDelegate
+        
         super.viewDidLoad()
        
         let circlePath = UIBezierPath(arcCenter:CGPoint(x: 195, y: 340), radius: 100, startAngle: -(.pi / 2), endAngle: .pi * 2, clockwise: true)
@@ -54,8 +57,13 @@ class Check: UIViewController {
         
         if isGrenn {
             
-        }
-        else {
+        } else {
+            
+            let dayDAO = DayDAO(dayNumber: daysCount, checkFlag: !isGrenn)
+            
+            dayDAO.saveDay(appDelegate: appDelegate)
+            dayDAO.readDays(appDelegate: appDelegate)
+            
             itsDoneButton.tintColor = UIColor(named: "DoneIn21Green")
             itsDoneButton.backgroundColor = UIColor(named: "DoneIn21Green")
             shape.strokeColor = UIColor(named:"DoneIn21Green")?.cgColor

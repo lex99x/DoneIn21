@@ -66,6 +66,9 @@ class OnboardViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.leftBarButtonItem = nil
+        navigationItem.hidesBackButton = true
+        
     }
 
 }

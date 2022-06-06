@@ -24,7 +24,7 @@ class Check: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        navigationItem.leftBarButtonItem = nil
+//        navigationItem.leftBarButtonItem = nil
         navigationItem.hidesBackButton = true
        
         let circlePath = UIBezierPath(arcCenter:CGPoint(x: 195, y: 340), radius: 90, startAngle: -(.pi / 2), endAngle: .pi * 2, clockwise: true)

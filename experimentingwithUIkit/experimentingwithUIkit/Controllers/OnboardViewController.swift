@@ -30,6 +30,7 @@ class OnboardViewController: UIViewController {
         
     }
     
+   
     
     @IBOutlet weak var mealsCell: CustomHabitCell!
     @IBAction func btnMealsClicked(_ sender: Any) {
@@ -63,10 +64,11 @@ class OnboardViewController: UIViewController {
         }
         
     }
+  
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.leftBarButtonItem = nil
+//        navigationItem.leftBarButtonItem = nil
         navigationItem.hidesBackButton = true
         
     }

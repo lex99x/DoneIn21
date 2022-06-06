@@ -9,14 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Page View Controller-->
-        <scene sceneID="5IS-cu-IIv">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="SFa-LK-bks" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="yo2-Zs-oVA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-652" y="-602"/>
-        </scene>
         <!--Onboard View Controller-->
         <scene sceneID="NCy-eS-Tf6">
             <objects>
@@ -52,20 +44,34 @@ that helps to improve self-image</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="escadinha" translatesAutoresizingMaskIntoConstraints="NO" id="mOa-KV-mju">
-                                <rect key="frame" x="0.0" y="528" width="414" height="368"/>
+                                <rect key="frame" x="0.0" y="546" width="414" height="350"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="368" id="4JM-4N-HGK"/>
+                                    <constraint firstAttribute="height" constant="350" id="4JM-4N-HGK"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAh-7b-3SY" customClass="CustomButton" customModule="experimentingwithUIkit" customModuleProvider="target">
+                                <rect key="frame" x="287" y="536" width="105" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="105" id="N6Z-HW-aaV"/>
+                                    <constraint firstAttribute="height" constant="35" id="YYL-Yu-imB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Continue" buttonSize="mini">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                    <color key="baseBackgroundColor" name="DoneIn21Green"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iWv-w4-6wT"/>
                         <color key="backgroundColor" name="DoneIn21Blue"/>
                         <constraints>
                             <constraint firstItem="fbx-cJ-PZ2" firstAttribute="top" secondItem="sqA-VV-bAR" secondAttribute="bottom" constant="36" id="4f4-9j-C5z"/>
                             <constraint firstItem="hhk-ox-KnN" firstAttribute="width" secondItem="5Md-q5-Hos" secondAttribute="width" multiplier="0.5" id="Bbs-Hi-JW9"/>
+                            <constraint firstItem="QAh-7b-3SY" firstAttribute="top" secondItem="fbx-cJ-PZ2" secondAttribute="bottom" constant="22" id="MZL-aq-UMZ"/>
                             <constraint firstAttribute="bottom" secondItem="mOa-KV-mju" secondAttribute="bottom" id="MsH-cM-cVa"/>
                             <constraint firstItem="mOa-KV-mju" firstAttribute="width" secondItem="5Md-q5-Hos" secondAttribute="width" id="NbF-yY-141"/>
                             <constraint firstItem="hhk-ox-KnN" firstAttribute="top" secondItem="iWv-w4-6wT" secondAttribute="top" constant="97" id="UIE-vC-b92"/>
+                            <constraint firstItem="iWv-w4-6wT" firstAttribute="trailing" secondItem="QAh-7b-3SY" secondAttribute="trailing" constant="22" id="fL6-Qz-Bwh"/>
                             <constraint firstItem="mOa-KV-mju" firstAttribute="centerX" secondItem="5Md-q5-Hos" secondAttribute="centerX" id="ift-cy-Rxv"/>
                             <constraint firstItem="hhk-ox-KnN" firstAttribute="centerX" secondItem="5Md-q5-Hos" secondAttribute="centerX" id="ipY-5L-sSc"/>
                             <constraint firstItem="fbx-cJ-PZ2" firstAttribute="centerX" secondItem="5Md-q5-Hos" secondAttribute="centerX" id="nNp-0J-zqP"/>
@@ -73,6 +79,9 @@ that helps to improve self-image</string>
                             <constraint firstItem="sqA-VV-bAR" firstAttribute="centerX" secondItem="5Md-q5-Hos" secondAttribute="centerX" id="y3Z-Vb-0a9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="continueButtonDiscover" destination="QAh-7b-3SY" id="joz-3v-1nF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Gt7-Ji-p3l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -113,11 +122,23 @@ new SELF in 21 days?</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="done" translatesAutoresizingMaskIntoConstraints="NO" id="ML1-kc-L5q">
-                                <rect key="frame" x="0.0" y="596" width="414" height="300"/>
+                                <rect key="frame" x="0.0" y="546" width="414" height="350"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="KC4-Nd-Loz"/>
+                                    <constraint firstAttribute="height" constant="350" id="KC4-Nd-Loz"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Za0-Jb-Hw9" customClass="CustomButton" customModule="experimentingwithUIkit" customModuleProvider="target">
+                                <rect key="frame" x="287" y="541" width="105" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="36q-kj-6g3"/>
+                                    <constraint firstAttribute="width" constant="105" id="N5s-HU-Q5Y"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Continue" buttonSize="mini">
+                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
+                                    <color key="baseBackgroundColor" name="DoneIn21Orange"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="DoneIn21Green"/>
@@ -129,11 +150,16 @@ new SELF in 21 days?</string>
                             <constraint firstItem="ML1-kc-L5q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y5l-Ih-h46"/>
                             <constraint firstItem="t9r-bC-Yqf" firstAttribute="top" secondItem="qJC-gN-tcQ" secondAttribute="bottom" constant="41" id="e5i-7t-cZM"/>
                             <constraint firstItem="z99-rI-hxK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ghJ-KT-Axx"/>
+                            <constraint firstItem="Za0-Jb-Hw9" firstAttribute="top" secondItem="t9r-bC-Yqf" secondAttribute="bottom" constant="22" id="l83-l3-RdI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Za0-Jb-Hw9" secondAttribute="trailing" constant="22" id="sf1-YS-Rqi"/>
                             <constraint firstAttribute="bottom" secondItem="ML1-kc-L5q" secondAttribute="bottom" id="xV7-Fz-tDt"/>
                             <constraint firstItem="qJC-gN-tcQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yji-QH-ATd"/>
                             <constraint firstItem="z99-rI-hxK" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="zOj-rO-sA3"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="continueButtonLearn" destination="Za0-Jb-Hw9" id="LVS-mU-SZE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -197,16 +223,16 @@ to be called?</string>
                                 <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eai" translatesAutoresizingMaskIntoConstraints="NO" id="dih-JE-A68">
-                                <rect key="frame" x="0.0" y="681" width="414" height="215"/>
+                                <rect key="frame" x="0.0" y="691" width="414" height="205"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="215" id="cPE-oh-tmt"/>
+                                    <constraint firstAttribute="height" constant="205" id="cPE-oh-tmt"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="StV-st-iN3" customClass="CustomButton" customModule="experimentingwithUIkit" customModuleProvider="target">
-                                <rect key="frame" x="283" y="660" width="111" height="37"/>
+                                <rect key="frame" x="289" y="663" width="105" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="4Ml-AN-eU9"/>
-                                    <constraint firstAttribute="width" constant="111" id="x3a-Ij-zLW"/>
+                                    <constraint firstAttribute="height" constant="35" id="4Ml-AN-eU9"/>
+                                    <constraint firstAttribute="width" constant="105" id="x3a-Ij-zLW"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Continue" buttonSize="mini">
@@ -222,7 +248,7 @@ to be called?</string>
                             <constraint firstItem="5Yq-Lx-q3H" firstAttribute="top" secondItem="fVH-Di-bEf" secondAttribute="bottom" constant="25" id="54Z-nU-UHe"/>
                             <constraint firstItem="dih-JE-A68" firstAttribute="centerX" secondItem="HhE-i1-Cnd" secondAttribute="centerX" id="6Js-NG-Bft"/>
                             <constraint firstItem="NHs-la-How" firstAttribute="centerX" secondItem="HhE-i1-Cnd" secondAttribute="centerX" id="9kc-2t-H2H"/>
-                            <constraint firstItem="StV-st-iN3" firstAttribute="top" secondItem="5Yq-Lx-q3H" secondAttribute="bottom" constant="19" id="Dit-2e-75s"/>
+                            <constraint firstItem="StV-st-iN3" firstAttribute="top" secondItem="5Yq-Lx-q3H" secondAttribute="bottom" constant="22" id="Dit-2e-75s"/>
                             <constraint firstItem="StV-st-iN3" firstAttribute="trailing" secondItem="pV7-R2-0gp" secondAttribute="trailing" id="EIz-aI-76u"/>
                             <constraint firstItem="NHs-la-How" firstAttribute="width" secondItem="HhE-i1-Cnd" secondAttribute="width" multiplier="0.5" id="TNI-Yy-GGh"/>
                             <constraint firstItem="fVH-Di-bEf" firstAttribute="top" secondItem="NHs-la-How" secondAttribute="bottom" constant="36" id="UY5-Xm-x7O"/>
@@ -233,6 +259,11 @@ to be called?</string>
                             <constraint firstAttribute="bottom" secondItem="dih-JE-A68" secondAttribute="bottom" id="qU7-X8-Zol"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="ageTextField" destination="pV7-R2-0gp" id="Okh-Ki-Qc3"/>
+                        <outlet property="nameTextField" destination="CMB-JQ-1g9" id="u6W-Nm-Wb7"/>
+                        <outlet property="saveButton" destination="StV-st-iN3" id="Z9o-U5-X91"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ako-Ud-wt8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -289,6 +320,10 @@ to be called?</string>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exercicios" translatesAutoresizingMaskIntoConstraints="NO" id="37b-WG-tjQ">
                                                         <rect key="frame" x="0.0" y="0.0" width="177" height="188"/>
+                                                        <gestureRecognizers/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="X7D-kc-p1W" appends="YES" id="5QJ-hI-rKq"/>
+                                                        </connections>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H95-4X-47W">
                                                         <rect key="frame" x="12" y="159" width="78" height="24"/>
@@ -296,6 +331,14 @@ to be called?</string>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5X-vP-CAh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="188"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="btnWorkoutClicked:" destination="clE-UN-jFC" eventType="touchUpInside" id="ac0-KJ-XtA"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" name="DoneIn21Blue"/>
                                                 <constraints>
@@ -304,7 +347,11 @@ to be called?</string>
                                                     <constraint firstAttribute="width" constant="177" id="7eK-Ve-evd"/>
                                                     <constraint firstItem="37b-WG-tjQ" firstAttribute="height" secondItem="cNQ-mA-O8Q" secondAttribute="height" id="Ek8-aE-7Ex"/>
                                                     <constraint firstItem="37b-WG-tjQ" firstAttribute="centerY" secondItem="cNQ-mA-O8Q" secondAttribute="centerY" id="GuV-0O-8r7"/>
+                                                    <constraint firstItem="g5X-vP-CAh" firstAttribute="width" secondItem="cNQ-mA-O8Q" secondAttribute="width" id="HEv-v3-cxI"/>
+                                                    <constraint firstItem="g5X-vP-CAh" firstAttribute="centerX" secondItem="cNQ-mA-O8Q" secondAttribute="centerX" id="XZ5-6Q-JjR"/>
                                                     <constraint firstAttribute="height" constant="188" id="fGb-m7-fhy"/>
+                                                    <constraint firstItem="g5X-vP-CAh" firstAttribute="centerY" secondItem="cNQ-mA-O8Q" secondAttribute="centerY" id="g2e-8l-Wvf"/>
+                                                    <constraint firstItem="g5X-vP-CAh" firstAttribute="height" secondItem="cNQ-mA-O8Q" secondAttribute="height" id="hNO-kI-Arf"/>
                                                     <constraint firstItem="37b-WG-tjQ" firstAttribute="width" secondItem="cNQ-mA-O8Q" secondAttribute="width" id="kQb-z4-l6e"/>
                                                     <constraint firstItem="H95-4X-47W" firstAttribute="leading" secondItem="cNQ-mA-O8Q" secondAttribute="leading" constant="12" id="r6Z-Bl-Hi8"/>
                                                 </constraints>
@@ -321,16 +368,32 @@ to be called?</string>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGs-52-lI5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="188"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="btnMealsClicked:" destination="clE-UN-jFC" eventType="touchUpInside" id="wzX-DX-QhW"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" name="DoneIn21Orange"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstItem="pkt-YW-cgi" firstAttribute="width" secondItem="4PT-b1-Tp5" secondAttribute="width" id="5tL-wg-0bN"/>
                                                     <constraint firstItem="pkt-YW-cgi" firstAttribute="centerY" secondItem="4PT-b1-Tp5" secondAttribute="centerY" id="A97-Qx-Gqh"/>
+                                                    <constraint firstItem="EGs-52-lI5" firstAttribute="width" secondItem="4PT-b1-Tp5" secondAttribute="width" id="Cdo-vG-b7v"/>
+                                                    <constraint firstItem="EGs-52-lI5" firstAttribute="height" secondItem="4PT-b1-Tp5" secondAttribute="height" id="Hga-R7-VHJ"/>
+                                                    <constraint firstItem="EGs-52-lI5" firstAttribute="centerY" secondItem="4PT-b1-Tp5" secondAttribute="centerY" id="I35-0C-lUK"/>
                                                     <constraint firstItem="pkt-YW-cgi" firstAttribute="centerX" secondItem="4PT-b1-Tp5" secondAttribute="centerX" id="PT9-v1-SnE"/>
                                                     <constraint firstItem="pkt-YW-cgi" firstAttribute="height" secondItem="4PT-b1-Tp5" secondAttribute="height" multiplier="0.781915" id="QFg-w1-bBZ"/>
                                                     <constraint firstAttribute="bottom" secondItem="gn8-Sm-gJl" secondAttribute="bottom" constant="5" id="jG2-zu-EF3"/>
                                                     <constraint firstItem="gn8-Sm-gJl" firstAttribute="leading" secondItem="4PT-b1-Tp5" secondAttribute="leading" constant="12" id="o5h-mB-yvo"/>
+                                                    <constraint firstItem="EGs-52-lI5" firstAttribute="centerX" secondItem="4PT-b1-Tp5" secondAttribute="centerX" id="qla-RR-fGc"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="LkH-Ul-wRd" appends="YES" id="zzh-lv-n1E"/>
+                                                </connections>
                                             </view>
                                         </subviews>
                                         <constraints>
@@ -357,11 +420,24 @@ to be called?</string>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="py9-Yy-Iqu">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="188"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="btnWaterClicked:" destination="clE-UN-jFC" eventType="touchUpInside" id="PFr-8N-waG"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" name="DoneIn21Orange"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstItem="kdl-eb-AhP" firstAttribute="width" secondItem="40n-kN-QIi" secondAttribute="width" id="049-Ss-9Ts"/>
+                                                    <constraint firstItem="py9-Yy-Iqu" firstAttribute="width" secondItem="40n-kN-QIi" secondAttribute="width" id="AMM-u2-Nn0"/>
+                                                    <constraint firstItem="py9-Yy-Iqu" firstAttribute="height" secondItem="40n-kN-QIi" secondAttribute="height" id="NLg-oC-rqw"/>
+                                                    <constraint firstItem="py9-Yy-Iqu" firstAttribute="centerX" secondItem="40n-kN-QIi" secondAttribute="centerX" id="Ryq-9t-1ke"/>
                                                     <constraint firstItem="kdl-eb-AhP" firstAttribute="centerY" secondItem="40n-kN-QIi" secondAttribute="centerY" id="SVb-Us-F4b"/>
+                                                    <constraint firstItem="py9-Yy-Iqu" firstAttribute="centerY" secondItem="40n-kN-QIi" secondAttribute="centerY" id="XSg-2y-GeW"/>
                                                     <constraint firstAttribute="bottom" secondItem="arC-f5-6vU" secondAttribute="bottom" constant="5" id="ZCg-iq-gGL"/>
                                                     <constraint firstAttribute="height" constant="188" id="b5X-zL-zrl"/>
                                                     <constraint firstItem="arC-f5-6vU" firstAttribute="leading" secondItem="40n-kN-QIi" secondAttribute="leading" constant="12" id="f5A-hO-ruc"/>
@@ -369,6 +445,9 @@ to be called?</string>
                                                     <constraint firstItem="kdl-eb-AhP" firstAttribute="centerX" secondItem="40n-kN-QIi" secondAttribute="centerX" id="iOh-Wo-XOh"/>
                                                     <constraint firstItem="kdl-eb-AhP" firstAttribute="height" secondItem="40n-kN-QIi" secondAttribute="height" multiplier="0.797872" id="pFa-jQ-brj"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="Gg7-2K-IzO" appends="YES" id="qXo-3h-vNf"/>
+                                                </connections>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="82q-RB-Aov" customClass="CustomHabitCell" customModule="experimentingwithUIkit" customModuleProvider="target">
                                                 <rect key="frame" x="197" y="0.0" width="177" height="188"/>
@@ -376,6 +455,14 @@ to be called?</string>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="estudos" translatesAutoresizingMaskIntoConstraints="NO" id="FWf-TI-Qjl">
                                                         <rect key="frame" x="0.0" y="38" width="177" height="112"/>
                                                     </imageView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dI7-tY-ql2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="177" height="188"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="plain"/>
+                                                        <connections>
+                                                            <action selector="btnFocusClicked:" destination="clE-UN-jFC" eventType="touchUpInside" id="5o8-Jq-DG4"/>
+                                                        </connections>
+                                                    </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Focus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lkc-js-Pb5">
                                                         <rect key="frame" x="12" y="159" width="55.5" height="24"/>
                                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
@@ -384,14 +471,22 @@ to be called?</string>
                                                     </label>
                                                 </subviews>
                                                 <color key="backgroundColor" name="DoneIn21Blue"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstItem="FWf-TI-Qjl" firstAttribute="height" secondItem="82q-RB-Aov" secondAttribute="height" multiplier="0.595745" id="Gxz-Gc-Vsm"/>
                                                     <constraint firstItem="FWf-TI-Qjl" firstAttribute="width" secondItem="82q-RB-Aov" secondAttribute="width" id="HZG-EX-y0d"/>
                                                     <constraint firstAttribute="bottom" secondItem="Lkc-js-Pb5" secondAttribute="bottom" constant="5" id="Huh-YS-3jy"/>
+                                                    <constraint firstItem="dI7-tY-ql2" firstAttribute="width" secondItem="82q-RB-Aov" secondAttribute="width" id="MRe-Jf-nUm"/>
+                                                    <constraint firstItem="dI7-tY-ql2" firstAttribute="centerY" secondItem="82q-RB-Aov" secondAttribute="centerY" id="NFN-he-cjz"/>
                                                     <constraint firstItem="FWf-TI-Qjl" firstAttribute="centerY" secondItem="82q-RB-Aov" secondAttribute="centerY" id="j1h-ei-XNP"/>
                                                     <constraint firstItem="FWf-TI-Qjl" firstAttribute="centerX" secondItem="82q-RB-Aov" secondAttribute="centerX" id="qHa-MG-jCf"/>
+                                                    <constraint firstItem="dI7-tY-ql2" firstAttribute="centerX" secondItem="82q-RB-Aov" secondAttribute="centerX" id="qp9-Gg-8hf"/>
                                                     <constraint firstItem="Lkc-js-Pb5" firstAttribute="leading" secondItem="82q-RB-Aov" secondAttribute="leading" constant="12" id="sAZ-6w-OTm"/>
+                                                    <constraint firstItem="dI7-tY-ql2" firstAttribute="height" secondItem="82q-RB-Aov" secondAttribute="height" id="uTO-oh-JJn"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="O76-eD-Pi5" appends="YES" id="TAH-7a-XU0"/>
+                                                </connections>
                                             </view>
                                         </subviews>
                                         <constraints>
@@ -409,9 +504,9 @@ to be called?</string>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F71-13-JCv" customClass="CustomButton" customModule="experimentingwithUIkit" customModuleProvider="target">
-                                <rect key="frame" x="20" y="796" width="374" height="37"/>
+                                <rect key="frame" x="20" y="796" width="374" height="35"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="5yA-LD-6bz"/>
+                                    <constraint firstAttribute="height" constant="35" id="5yA-LD-6bz"/>
                                 </constraints>
                                 <buttonConfiguration key="configuration" style="filled" title="Start now!" buttonSize="mini">
                                     <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
@@ -435,8 +530,19 @@ to be called?</string>
                             <constraint firstItem="nK5-KB-Pme" firstAttribute="width" secondItem="YbX-zn-za1" secondAttribute="width" id="zkW-Ff-dWj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="focusCell" destination="82q-RB-Aov" id="B9Y-a0-xSr"/>
+                        <outlet property="mealsCell" destination="4PT-b1-Tp5" id="tPw-cY-4iC"/>
+                        <outlet property="startButton" destination="F71-13-JCv" id="QaL-Ad-uLZ"/>
+                        <outlet property="waterCells" destination="40n-kN-QIi" id="DBg-Ai-sMz"/>
+                        <outlet property="workoutCell" destination="cNQ-mA-O8Q" id="xtC-Gs-Tka"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vhs-fn-mdS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="X7D-kc-p1W"/>
+                <tapGestureRecognizer id="LkH-Ul-wRd"/>
+                <tapGestureRecognizer id="Gg7-2K-IzO"/>
+                <tapGestureRecognizer id="O76-eD-Pi5"/>
             </objects>
             <point key="canvasLocation" x="1628.985507246377" y="73.660714285714278"/>
         </scene>
@@ -449,7 +555,7 @@ to be called?</string>
         <image name="escadinha" width="414" height="414"/>
         <image name="estudos" width="177" height="112"/>
         <image name="exercicios" width="177" height="116"/>
-        <image name="icone" width="57.5" height="55"/>
+        <image name="icone" width="34" height="31"/>
         <image name="logo" width="150" height="148"/>
         <namedColor name="DoneIn21Blue">
             <color red="0.12549019607843137" green="0.23529411764705882" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

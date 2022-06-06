@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17159387284D19CB00CAAE80 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17159386284D19CB00CAAE80 /* CollectionViewCell.swift */; };
-		1715938A284D3B9000CAAE80 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17159389284D3B9000CAAE80 /* IntroViewController.swift */; };
+		17159387284D19CB00CAAE80 /* CustomHabitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17159386284D19CB00CAAE80 /* CustomHabitCell.swift */; };
+		1715938A284D3B9000CAAE80 /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17159389284D3B9000CAAE80 /* OnboardViewController.swift */; };
 		1715938D284D3C5700CAAE80 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1715938C284D3C5700CAAE80 /* User.swift */; };
-		173C8E2C284BA0290004513F /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 173C8E2B284BA0290004513F /* Intro.storyboard */; };
+		1715938F284D850000CAAE80 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1715938E284D850000CAAE80 /* CustomTextField.swift */; };
+		17159391284D88A500CAAE80 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17159390284D88A500CAAE80 /* CustomButton.swift */; };
+		17159393284D8A6900CAAE80 /* CustomOnboardLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17159392284D8A6900CAAE80 /* CustomOnboardLabel.swift */; };
+		173C8E2C284BA0290004513F /* Onboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 173C8E2B284BA0290004513F /* Onboard.storyboard */; };
 		179D5739284A5CD8006E9927 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179D5738284A5CD8006E9927 /* LaunchScreen.storyboard */; };
 		51058613284509F4005D25C0 /* cardDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51058612284509F4005D25C0 /* cardDetail.swift */; };
 		512DC98C282D9EBF0056C81A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512DC98B282D9EBF0056C81A /* AppDelegate.swift */; };
@@ -27,10 +30,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		17159386284D19CB00CAAE80 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		17159389284D3B9000CAAE80 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		17159386284D19CB00CAAE80 /* CustomHabitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHabitCell.swift; sourceTree = "<group>"; };
+		17159389284D3B9000CAAE80 /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
 		1715938C284D3C5700CAAE80 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		173C8E2B284BA0290004513F /* Intro.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Intro.storyboard; sourceTree = "<group>"; };
+		1715938E284D850000CAAE80 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		17159390284D88A500CAAE80 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		17159392284D8A6900CAAE80 /* CustomOnboardLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomOnboardLabel.swift; sourceTree = "<group>"; };
+		173C8E2B284BA0290004513F /* Onboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboard.storyboard; sourceTree = "<group>"; };
 		179D5738284A5CD8006E9927 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51058612284509F4005D25C0 /* cardDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardDetail.swift; sourceTree = "<group>"; };
 		512DC988282D9EBF0056C81A /* experimentingwithUIkit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = experimentingwithUIkit.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,7 +68,10 @@
 		17159385284D19A100CAAE80 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				17159386284D19CB00CAAE80 /* CollectionViewCell.swift */,
+				17159386284D19CB00CAAE80 /* CustomHabitCell.swift */,
+				1715938E284D850000CAAE80 /* CustomTextField.swift */,
+				17159390284D88A500CAAE80 /* CustomButton.swift */,
+				17159392284D8A6900CAAE80 /* CustomOnboardLabel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -70,7 +79,7 @@
 		17159388284D3B5E00CAAE80 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				17159389284D3B9000CAAE80 /* IntroViewController.swift */,
+				17159389284D3B9000CAAE80 /* OnboardViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -112,7 +121,7 @@
 				51E7421D284BBAD4000AFD39 /* check  */,
 				179D5738284A5CD8006E9927 /* LaunchScreen.storyboard */,
 				512DC991282D9EBF0056C81A /* Main.storyboard */,
-				173C8E2B284BA0290004513F /* Intro.storyboard */,
+				173C8E2B284BA0290004513F /* Onboard.storyboard */,
 				512DC994282D9EC00056C81A /* Assets.xcassets */,
 				512DC999282D9EC00056C81A /* Info.plist */,
 			);
@@ -209,7 +218,7 @@
 				179D5739284A5CD8006E9927 /* LaunchScreen.storyboard in Resources */,
 				512DC995282D9EC00056C81A /* Assets.xcassets in Resources */,
 				512DC993282D9EBF0056C81A /* Main.storyboard in Resources */,
-				173C8E2C284BA0290004513F /* Intro.storyboard in Resources */,
+				173C8E2C284BA0290004513F /* Onboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,8 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1715938F284D850000CAAE80 /* CustomTextField.swift in Sources */,
 				1715938D284D3C5700CAAE80 /* User.swift in Sources */,
-				1715938A284D3B9000CAAE80 /* IntroViewController.swift in Sources */,
+				1715938A284D3B9000CAAE80 /* OnboardViewController.swift in Sources */,
+				17159393284D8A6900CAAE80 /* CustomOnboardLabel.swift in Sources */,
 				51058613284509F4005D25C0 /* cardDetail.swift in Sources */,
 				51E74221284BE9C6000AFD39 /* FAQtextcell.swift in Sources */,
 				512DC990282D9EBF0056C81A /* check.swift in Sources */,
@@ -232,7 +243,8 @@
 				51D5BAB7284BAFA8006205D7 /* FAQ.swift in Sources */,
 				512DC98E282D9EBF0056C81A /* SceneDelegate.swift in Sources */,
 				51E78B59283EC21C005CF8F3 /* cardcell.swift in Sources */,
-				17159387284D19CB00CAAE80 /* CollectionViewCell.swift in Sources */,
+				17159387284D19CB00CAAE80 /* CustomHabitCell.swift in Sources */,
+				17159391284D88A500CAAE80 /* CustomButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

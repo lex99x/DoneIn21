@@ -74,7 +74,7 @@
 		17159385284D19A100CAAE80 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				173813A32857877000857286 /* storyboards */,
+				173813A32857877000857286 /* Storyboards */,
 				17159386284D19CB00CAAE80 /* CustomHabitCell.swift */,
 				1715938E284D850000CAAE80 /* CustomTextField.swift */,
 				17159390284D88A500CAAE80 /* CustomButton.swift */,
@@ -108,7 +108,7 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		173813A32857877000857286 /* storyboards */ = {
+		173813A32857877000857286 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
 				179D5738284A5CD8006E9927 /* LaunchScreen.storyboard */,
@@ -116,7 +116,7 @@
 				173C8E2B284BA0290004513F /* Onboard.storyboard */,
 				5174D07D2857719300141A2B /* FAQ.storyboard */,
 			);
-			path = storyboards;
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		512DC97F282D9EBF0056C81A = {

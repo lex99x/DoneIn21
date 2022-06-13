@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-class Textcell:UITableViewCell{
+class Textcell: UITableViewCell {
     
     
     @IBOutlet weak var question: UILabel!

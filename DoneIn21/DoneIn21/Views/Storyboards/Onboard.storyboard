@@ -12,7 +12,7 @@
         <!--Onboard View Controller-->
         <scene sceneID="NCy-eS-Tf6">
             <objects>
-                <viewController modalTransitionStyle="partialCurl" modalPresentationStyle="fullScreen" id="D40-t7-qlA" customClass="OnboardViewController" customModule="experimentingwithUIkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="partialCurl" modalPresentationStyle="fullScreen" id="D40-t7-qlA" customClass="OnboardViewController" customModule="DoneIn21" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Md-q5-Hos">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,7 +20,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="hhk-ox-KnN">
                                 <rect key="frame" x="103.5" y="84" width="207" height="148"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover the 21 days theory" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqA-VV-bAR" customClass="CustomOnboardLabel" customModule="experimentingwithUIkit" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Discover the 21 days theory" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sqA-VV-bAR" customClass="CustomOnboardLabel" customModule="DoneIn21" customModuleProvider="target">
                                 <rect key="frame" x="39.5" y="268" width="335" height="86"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="335" id="nfl-NQ-wxe"/>
@@ -49,7 +49,7 @@ that helps to improve self-image</string>
                                     <constraint firstAttribute="height" constant="350" id="4JM-4N-HGK"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAh-7b-3SY" customClass="CustomButton" customModule="experimentingwithUIkit" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QAh-7b-3SY" customClass="CustomButton" customModule="DoneIn21" customModuleProvider="target">
                                 <rect key="frame" x="287" y="479" width="105" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="105" id="N6Z-HW-aaV"/>
@@ -94,7 +94,7 @@ that helps to improve self-image</string>
         <!--Onboard View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="OnboardViewController" customModule="experimentingwithUIkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="OnboardViewController" customModule="DoneIn21" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,7 +102,7 @@ that helps to improve self-image</string>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="z99-rI-hxK">
                                 <rect key="frame" x="103.5" y="84" width="207" height="148"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn how to cultivate new habits" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJC-gN-tcQ" customClass="CustomOnboardLabel" customModule="experimentingwithUIkit" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn how to cultivate new habits" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qJC-gN-tcQ" customClass="CustomOnboardLabel" customModule="DoneIn21" customModuleProvider="target">
                                 <rect key="frame" x="39.5" y="268" width="335" height="86"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="335" id="8Hd-uA-if1"/>
@@ -131,7 +131,7 @@ new SELF in 21 days?</string>
                                     <constraint firstAttribute="height" constant="350" id="KC4-Nd-Loz"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Za0-Jb-Hw9" customClass="CustomButton" customModule="experimentingwithUIkit" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Za0-Jb-Hw9" customClass="CustomButton" customModule="DoneIn21" customModuleProvider="target">
                                 <rect key="frame" x="287" y="484" width="105" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="36q-kj-6g3"/>
@@ -143,7 +143,7 @@ new SELF in 21 days?</string>
                                     <color key="baseBackgroundColor" name="DoneIn21Orange"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="6my-9J-4Ze" kind="show" id="d9f-cK-7uY"/>
+                                    <segue destination="clE-UN-jFC" kind="show" id="BJ0-wY-FL6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -172,114 +172,6 @@ new SELF in 21 days?</string>
             </objects>
             <point key="canvasLocation" x="1000.0000000000001" y="73.660714285714278"/>
         </scene>
-        <!--Onboard View Controller-->
-        <scene sceneID="dt0-qp-QSg">
-            <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="6my-9J-4Ze" customClass="OnboardViewController" customModule="experimentingwithUIkit" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="HhE-i1-Cnd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="NHs-la-How">
-                                <rect key="frame" x="103.5" y="84" width="207" height="148"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVH-Di-bEf" customClass="CustomOnboardLabel" customModule="experimentingwithUIkit" customModuleProvider="target">
-                                <rect key="frame" x="40.5" y="268" width="333" height="86"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="333" id="DdZ-sP-bT0"/>
-                                </constraints>
-                                <string key="text">What would you like
-to be called?</string>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="36"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                                <size key="shadowOffset" width="1" height="1"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="5Yq-Lx-q3H">
-                                <rect key="frame" x="0.0" y="379" width="414" height="205"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3n-33-LEr">
-                                        <rect key="frame" x="20" y="0.0" width="374" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CMB-JQ-1g9" customClass="CustomTextField" customModule="experimentingwithUIkit" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="43" width="374" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="YQi-jZ-cvm"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pjM-0H-xkW">
-                                        <rect key="frame" x="20" y="112" width="374" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pV7-R2-0gp" customClass="CustomTextField" customModule="experimentingwithUIkit" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="155" width="374" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="rkI-PP-PT3"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                </subviews>
-                                <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="20" bottom="0.0" trailing="20"/>
-                            </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eai" translatesAutoresizingMaskIntoConstraints="NO" id="dih-JE-A68">
-                                <rect key="frame" x="0.0" y="691" width="414" height="205"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="205" id="cPE-oh-tmt"/>
-                                </constraints>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="StV-st-iN3" customClass="CustomButton" customModule="experimentingwithUIkit" customModuleProvider="target">
-                                <rect key="frame" x="289" y="606" width="105" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="4Ml-AN-eU9"/>
-                                    <constraint firstAttribute="width" constant="105" id="x3a-Ij-zLW"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Continue" buttonSize="mini">
-                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
-                                    <color key="baseBackgroundColor" name="DoneIn21Blue"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="clE-UN-jFC" kind="show" id="toV-74-yrn"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="htP-IT-6DA"/>
-                        <color key="backgroundColor" name="DoneIn21Orange"/>
-                        <constraints>
-                            <constraint firstItem="dih-JE-A68" firstAttribute="width" secondItem="HhE-i1-Cnd" secondAttribute="width" id="1Ze-O0-FEO"/>
-                            <constraint firstItem="5Yq-Lx-q3H" firstAttribute="top" secondItem="fVH-Di-bEf" secondAttribute="bottom" constant="25" id="54Z-nU-UHe"/>
-                            <constraint firstItem="dih-JE-A68" firstAttribute="centerX" secondItem="HhE-i1-Cnd" secondAttribute="centerX" id="6Js-NG-Bft"/>
-                            <constraint firstItem="NHs-la-How" firstAttribute="centerX" secondItem="HhE-i1-Cnd" secondAttribute="centerX" id="9kc-2t-H2H"/>
-                            <constraint firstItem="StV-st-iN3" firstAttribute="top" secondItem="5Yq-Lx-q3H" secondAttribute="bottom" constant="22" id="Dit-2e-75s"/>
-                            <constraint firstItem="StV-st-iN3" firstAttribute="trailing" secondItem="pV7-R2-0gp" secondAttribute="trailing" id="EIz-aI-76u"/>
-                            <constraint firstItem="NHs-la-How" firstAttribute="width" secondItem="HhE-i1-Cnd" secondAttribute="width" multiplier="0.5" id="TNI-Yy-GGh"/>
-                            <constraint firstItem="fVH-Di-bEf" firstAttribute="top" secondItem="NHs-la-How" secondAttribute="bottom" constant="36" id="UY5-Xm-x7O"/>
-                            <constraint firstItem="5Yq-Lx-q3H" firstAttribute="centerX" secondItem="HhE-i1-Cnd" secondAttribute="centerX" id="Wg0-QD-Yyu"/>
-                            <constraint firstItem="NHs-la-How" firstAttribute="top" secondItem="htP-IT-6DA" secondAttribute="top" constant="40" id="dap-Zb-nGh"/>
-                            <constraint firstItem="fVH-Di-bEf" firstAttribute="centerX" secondItem="HhE-i1-Cnd" secondAttribute="centerX" id="fjI-Hg-U0d"/>
-                            <constraint firstItem="5Yq-Lx-q3H" firstAttribute="width" secondItem="HhE-i1-Cnd" secondAttribute="width" id="npC-Ir-tlM"/>
-                            <constraint firstAttribute="bottom" secondItem="dih-JE-A68" secondAttribute="bottom" id="qU7-X8-Zol"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="hLg-9r-daP"/>
-                    <connections>
-                        <outlet property="ageTextField" destination="pV7-R2-0gp" id="Okh-Ki-Qc3"/>
-                        <outlet property="nameTextField" destination="CMB-JQ-1g9" id="u6W-Nm-Wb7"/>
-                        <outlet property="saveButton" destination="StV-st-iN3" id="Z9o-U5-X91"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ako-Ud-wt8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1763.7681159420292" y="73.660714285714278"/>
-        </scene>
         <!--Main-->
         <scene sceneID="BAd-bv-rAE">
             <objects>
@@ -288,12 +180,12 @@ to be called?</string>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UaA-fB-mhq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3246" y="492"/>
+            <point key="canvasLocation" x="2130" y="493"/>
         </scene>
         <!--Onboard View Controller-->
         <scene sceneID="BwZ-Tn-EqN">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="clE-UN-jFC" customClass="OnboardViewController" customModule="experimentingwithUIkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="clE-UN-jFC" customClass="OnboardViewController" customModule="DoneIn21" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YbX-zn-za1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -336,7 +228,7 @@ to be called?</string>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="luf-4N-Pm6">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="188"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cNQ-mA-O8Q" customClass="CustomHabitCell" customModule="experimentingwithUIkit" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cNQ-mA-O8Q" customClass="CustomHabitCell" customModule="DoneIn21" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="177" height="188"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exercicios" translatesAutoresizingMaskIntoConstraints="NO" id="37b-WG-tjQ">
@@ -377,7 +269,7 @@ to be called?</string>
                                                     <constraint firstItem="H95-4X-47W" firstAttribute="leading" secondItem="cNQ-mA-O8Q" secondAttribute="leading" constant="12" id="r6Z-Bl-Hi8"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4PT-b1-Tp5" customClass="CustomHabitCell" customModule="experimentingwithUIkit" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4PT-b1-Tp5" customClass="CustomHabitCell" customModule="DoneIn21" customModuleProvider="target">
                                                 <rect key="frame" x="197" y="0.0" width="177" height="188"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="alimentos" translatesAutoresizingMaskIntoConstraints="NO" id="pkt-YW-cgi">
@@ -429,7 +321,7 @@ to be called?</string>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OUN-W3-OMz">
                                         <rect key="frame" x="0.0" y="208" width="374" height="188"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="40n-kN-QIi" customClass="CustomHabitCell" customModule="experimentingwithUIkit" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="40n-kN-QIi" customClass="CustomHabitCell" customModule="DoneIn21" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="177" height="188"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="agua" translatesAutoresizingMaskIntoConstraints="NO" id="kdl-eb-AhP">
@@ -470,7 +362,7 @@ to be called?</string>
                                                     <outletCollection property="gestureRecognizers" destination="Gg7-2K-IzO" appends="YES" id="qXo-3h-vNf"/>
                                                 </connections>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="82q-RB-Aov" customClass="CustomHabitCell" customModule="experimentingwithUIkit" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="82q-RB-Aov" customClass="CustomHabitCell" customModule="DoneIn21" customModuleProvider="target">
                                                 <rect key="frame" x="197" y="0.0" width="177" height="188"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="estudos" translatesAutoresizingMaskIntoConstraints="NO" id="FWf-TI-Qjl">
@@ -524,7 +416,7 @@ to be called?</string>
                                     <constraint firstItem="OUN-W3-OMz" firstAttribute="top" secondItem="luf-4N-Pm6" secondAttribute="bottom" constant="20" id="bSP-PU-qrK"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F71-13-JCv" customClass="CustomButton" customModule="experimentingwithUIkit" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F71-13-JCv" customClass="CustomButton" customModule="DoneIn21" customModuleProvider="target">
                                 <rect key="frame" x="20" y="759" width="374" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="5yA-LD-6bz"/>
@@ -568,14 +460,13 @@ to be called?</string>
                 <tapGestureRecognizer id="Gg7-2K-IzO"/>
                 <tapGestureRecognizer id="O76-eD-Pi5"/>
             </objects>
-            <point key="canvasLocation" x="2825" y="74"/>
+            <point key="canvasLocation" x="1759" y="74"/>
         </scene>
     </scenes>
     <resources>
         <image name="agua" width="177" height="150"/>
         <image name="alimentos" width="177" height="147"/>
         <image name="done" width="321" height="315"/>
-        <image name="eai" width="413" height="248"/>
         <image name="escadinha" width="414" height="414"/>
         <image name="estudos" width="177" height="112"/>
         <image name="exercicios" width="177" height="116"/>

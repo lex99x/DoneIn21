@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g7J-yF-gah">
-    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Image references" minToolsVersion="12.0"/>
@@ -13,7 +13,7 @@
         <!--Done in 21-->
         <scene sceneID="wJ6-K2-KCu">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="g7J-yF-gah" customClass="Check" customModule="experimentingwithUIkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="g7J-yF-gah" customClass="Check" customModule="DoneIn21" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tVs-EJ-bfO" customClass="UIViewcontroller">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,24 +48,61 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="32"/>
                                 </buttonConfiguration>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjp-um-Epa">
-                                <rect key="frame" x="24" y="280" width="353" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">Check the button bellow
-when you're done!</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjp-um-Epa">
+                                <rect key="frame" x="36" y="243" width="312.5" height="76.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Press">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="systemBold" size="32"/>
+                                            <font key="NSOriginalFont" metaFont="systemBold" size="32"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content"> the button bellow
+</string>
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="32"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="when you're ">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="system" size="32"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="done!">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="systemBold" size="32"/>
+                                            <font key="NSOriginalFont" metaFont="systemBold" size="32"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zFV-ZU-ALH">
+                                <rect key="frame" x="62" y="380" width="279" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Its Done!">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="32"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="Itsdone:" destination="g7J-yF-gah" eventType="touchUpInside" id="aYC-1b-l7n"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="H31-k3-llE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="kHJ-yc-aMe" firstAttribute="top" secondItem="H31-k3-llE" secondAttribute="top" constant="50" id="1rC-ve-ybI"/>
+                            <constraint firstItem="cjp-um-Epa" firstAttribute="top" secondItem="62B-dy-6Ia" secondAttribute="bottom" constant="111" id="5Cm-aR-Wlf"/>
                             <constraint firstItem="62B-dy-6Ia" firstAttribute="leading" secondItem="H31-k3-llE" secondAttribute="leading" constant="24" id="7av-2e-i5p"/>
                             <constraint firstItem="62B-dy-6Ia" firstAttribute="top" secondItem="H31-k3-llE" secondAttribute="top" constant="50" id="bJT-4w-qNj"/>
                             <constraint firstItem="3bK-BZ-wGX" firstAttribute="top" secondItem="H31-k3-llE" secondAttribute="top" constant="50" id="dQW-ck-Mh6"/>
                             <constraint firstItem="3bK-BZ-wGX" firstAttribute="leading" secondItem="kHJ-yc-aMe" secondAttribute="trailing" constant="7" id="fD1-lh-7Ak"/>
+                            <constraint firstItem="cjp-um-Epa" firstAttribute="leading" secondItem="H31-k3-llE" secondAttribute="leading" constant="36" id="hM7-g5-xtG"/>
                             <constraint firstItem="H31-k3-llE" firstAttribute="trailing" secondItem="3bK-BZ-wGX" secondAttribute="trailing" constant="24" id="zmJ-S9-fIk"/>
                         </constraints>
                     </view>
@@ -80,6 +117,9 @@ when you're done!</string>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="itsDoneButton" destination="zFV-ZU-ALH" id="4J3-bk-14N"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mtB-WK-o6h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,7 +128,7 @@ when you're done!</string>
         <!--Exercise Detail-->
         <scene sceneID="0Yu-IX-Hbb">
             <objects>
-                <viewController id="4uL-qa-QRq" customClass="ExerciseDetail" customModule="experimentingwithUIkit" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4uL-qa-QRq" customClass="ExerciseDetail" customModule="DoneIn21" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="36n-In-xXW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

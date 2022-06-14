@@ -31,6 +31,7 @@
 		51E74223284BEA9A000AFD39 /* QuestionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E74222284BEA9A000AFD39 /* QuestionDetail.swift */; };
 		51E78B59283EC21C005CF8F3 /* CardcellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E78B58283EC21C005CF8F3 /* CardcellView.swift */; };
 		51FDA2B82857910A00381914 /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = 51FDA2B72857910A00381914 /* FloatingPanel */; };
+		51FDA2BE2858B18600381914 /* ItsDoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FDA2BD2858B18600381914 /* ItsDoneButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		51E74220284BE9C6000AFD39 /* FaqTextcellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqTextcellView.swift; sourceTree = "<group>"; };
 		51E74222284BEA9A000AFD39 /* QuestionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetail.swift; sourceTree = "<group>"; };
 		51E78B58283EC21C005CF8F3 /* CardcellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardcellView.swift; sourceTree = "<group>"; };
+		51FDA2BD2858B18600381914 /* ItsDoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItsDoneButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				17159386284D19CB00CAAE80 /* CustomHabitCell.swift */,
 				1715938E284D850000CAAE80 /* CustomTextField.swift */,
 				17159390284D88A500CAAE80 /* CustomButton.swift */,
+				51FDA2BD2858B18600381914 /* ItsDoneButton.swift */,
 				17159392284D8A6900CAAE80 /* CustomOnboardLabel.swift */,
 				51E74220284BE9C6000AFD39 /* FaqTextcellView.swift */,
 				51E78B58283EC21C005CF8F3 /* CardcellView.swift */,
@@ -238,6 +241,7 @@
 				17159397284DA59800CAAE80 /* AppModel.xcdatamodeld in Sources */,
 				51058613284509F4005D25C0 /* CardDetailModel.swift in Sources */,
 				51E74221284BE9C6000AFD39 /* FaqTextcellView.swift in Sources */,
+				51FDA2BE2858B18600381914 /* ItsDoneButton.swift in Sources */,
 				512DC990282D9EBF0056C81A /* CheckController.swift in Sources */,
 				5170D9A5284C02F30085E262 /* FaqDetailController.swift in Sources */,
 				51E74223284BEA9A000AFD39 /* QuestionDetail.swift in Sources */,

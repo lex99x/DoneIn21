@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ORq-nZ-PxI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -9,9 +9,17 @@
     </dependencies>
     <scenes>
         <!--Onboard View Controller-->
+        <scene sceneID="j3p-e7-dYL">
+            <objects>
+                <pageViewController storyboardIdentifier="OnboardViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ORq-nZ-PxI" customClass="OnboardViewController" customModule="DoneIn21" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W6s-Pe-F97" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-532" y="74"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="NCy-eS-Tf6">
             <objects>
-                <viewController modalTransitionStyle="partialCurl" modalPresentationStyle="fullScreen" id="D40-t7-qlA" customClass="OnboardViewController" customModule="DoneIn21" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DiscoverViewController" modalTransitionStyle="partialCurl" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="D40-t7-qlA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Md-q5-Hos">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,6 +56,9 @@ that helps to improve self-image</string>
                                     <constraint firstAttribute="height" constant="350" id="4JM-4N-HGK"/>
                                 </constraints>
                             </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="1" translatesAutoresizingMaskIntoConstraints="NO" id="3rB-y5-Hhz">
+                                <rect key="frame" x="149.5" y="836" width="115.5" height="26"/>
+                            </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="iWv-w4-6wT"/>
                         <color key="backgroundColor" name="DoneIn21Blue"/>
@@ -55,8 +66,10 @@ that helps to improve self-image</string>
                             <constraint firstItem="fbx-cJ-PZ2" firstAttribute="top" secondItem="sqA-VV-bAR" secondAttribute="bottom" constant="36" id="4f4-9j-C5z"/>
                             <constraint firstItem="hhk-ox-KnN" firstAttribute="width" secondItem="5Md-q5-Hos" secondAttribute="width" multiplier="0.5" id="Bbs-Hi-JW9"/>
                             <constraint firstAttribute="bottom" secondItem="mOa-KV-mju" secondAttribute="bottom" id="MsH-cM-cVa"/>
+                            <constraint firstItem="3rB-y5-Hhz" firstAttribute="bottom" secondItem="iWv-w4-6wT" secondAttribute="bottom" id="NIm-f1-XRg"/>
                             <constraint firstItem="mOa-KV-mju" firstAttribute="width" secondItem="5Md-q5-Hos" secondAttribute="width" id="NbF-yY-141"/>
                             <constraint firstItem="hhk-ox-KnN" firstAttribute="top" secondItem="iWv-w4-6wT" secondAttribute="top" constant="40" id="UIE-vC-b92"/>
+                            <constraint firstItem="3rB-y5-Hhz" firstAttribute="centerX" secondItem="5Md-q5-Hos" secondAttribute="centerX" id="aFr-Au-f3z"/>
                             <constraint firstItem="mOa-KV-mju" firstAttribute="centerX" secondItem="5Md-q5-Hos" secondAttribute="centerX" id="ift-cy-Rxv"/>
                             <constraint firstItem="hhk-ox-KnN" firstAttribute="centerX" secondItem="5Md-q5-Hos" secondAttribute="centerX" id="ipY-5L-sSc"/>
                             <constraint firstItem="fbx-cJ-PZ2" firstAttribute="centerX" secondItem="5Md-q5-Hos" secondAttribute="centerX" id="nNp-0J-zqP"/>
@@ -70,10 +83,10 @@ that helps to improve self-image</string>
             </objects>
             <point key="canvasLocation" x="996" y="74"/>
         </scene>
-        <!--Onboard View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="OnboardViewController" customModule="DoneIn21" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LearnViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -110,17 +123,22 @@ new SELF in 21 days?</string>
                                     <constraint firstAttribute="height" constant="350" id="KC4-Nd-Loz"/>
                                 </constraints>
                             </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="e2W-Mk-CVP">
+                                <rect key="frame" x="149.5" y="836" width="115.5" height="26"/>
+                            </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" name="DoneIn21Blue"/>
                         <constraints>
                             <constraint firstItem="ML1-kc-L5q" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="1VR-K1-KyY"/>
                             <constraint firstItem="qJC-gN-tcQ" firstAttribute="top" secondItem="z99-rI-hxK" secondAttribute="bottom" constant="36" id="4F7-iC-qVb"/>
+                            <constraint firstItem="e2W-Mk-CVP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OnR-7c-dMA"/>
                             <constraint firstItem="z99-rI-hxK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="WTb-yY-hKe"/>
                             <constraint firstItem="t9r-bC-Yqf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XaP-9u-G5B"/>
                             <constraint firstItem="ML1-kc-L5q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y5l-Ih-h46"/>
                             <constraint firstItem="t9r-bC-Yqf" firstAttribute="top" secondItem="qJC-gN-tcQ" secondAttribute="bottom" constant="41" id="e5i-7t-cZM"/>
                             <constraint firstItem="z99-rI-hxK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ghJ-KT-Axx"/>
+                            <constraint firstItem="e2W-Mk-CVP" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="riZ-Dl-OxF"/>
                             <constraint firstAttribute="bottom" secondItem="ML1-kc-L5q" secondAttribute="bottom" id="xV7-Fz-tDt"/>
                             <constraint firstItem="qJC-gN-tcQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yji-QH-ATd"/>
                             <constraint firstItem="z99-rI-hxK" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="zOj-rO-sA3"/>
@@ -129,7 +147,7 @@ new SELF in 21 days?</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="258" y="74"/>
+            <point key="canvasLocation" x="236" y="74"/>
         </scene>
         <!--Main-->
         <scene sceneID="BAd-bv-rAE">
@@ -139,18 +157,18 @@ new SELF in 21 days?</string>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UaA-fB-mhq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2251" y="74"/>
+            <point key="canvasLocation" x="2221" y="74"/>
         </scene>
-        <!--Onboard View Controller-->
+        <!--Habits View Controller-->
         <scene sceneID="BwZ-Tn-EqN">
             <objects>
-                <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="clE-UN-jFC" customClass="OnboardViewController" customModule="DoneIn21" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HabitsViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="clE-UN-jFC" customClass="HabitsViewController" customModule="DoneIn21" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YbX-zn-za1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="c9J-gi-Ww3">
-                                <rect key="frame" x="20" y="174" width="374" height="548.5"/>
+                                <rect key="frame" x="20" y="172" width="374" height="552.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose your new habit:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gI4-j9-o0A" customClass="CustomOnboardLabel" customModule="DoneIn21" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="38.5"/>
@@ -219,9 +237,6 @@ new SELF in 21 days?</string>
                                                                 <rect key="frame" x="0.0" y="0.0" width="177" height="188"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain"/>
-                                                                <connections>
-                                                                    <action selector="btnMealsClicked:" destination="clE-UN-jFC" eventType="touchUpInside" id="wzX-DX-QhW"/>
-                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" name="DoneIn21Gray"/>
@@ -268,9 +283,6 @@ new SELF in 21 days?</string>
                                                                 <rect key="frame" x="0.0" y="0.0" width="177" height="188"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain"/>
-                                                                <connections>
-                                                                    <action selector="btnWaterClicked:" destination="clE-UN-jFC" eventType="touchUpInside" id="PFr-8N-waG"/>
-                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" name="DoneIn21Gray"/>
@@ -300,9 +312,6 @@ new SELF in 21 days?</string>
                                                                 <rect key="frame" x="0.0" y="0.0" width="177" height="188"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain"/>
-                                                                <connections>
-                                                                    <action selector="btnFocusClicked:" destination="clE-UN-jFC" eventType="touchUpInside" id="5o8-Jq-DG4"/>
-                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Focus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lkc-js-Pb5">
                                                                 <rect key="frame" x="12" y="159" width="55.5" height="24"/>
@@ -339,8 +348,8 @@ new SELF in 21 days?</string>
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F71-13-JCv" customClass="CustomButton" customModule="DoneIn21" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="514.5" width="374" height="34"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Start now!" buttonSize="mini">
+                                        <rect key="frame" x="0.0" y="514.5" width="374" height="38"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Start now!">
                                             <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="20"/>
                                             <color key="baseBackgroundColor" name="DoneIn21Green"/>
                                         </buttonConfiguration>
@@ -350,19 +359,22 @@ new SELF in 21 days?</string>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" currentPage="2" translatesAutoresizingMaskIntoConstraints="NO" id="UNU-Ay-osj">
+                                <rect key="frame" x="149.5" y="836" width="115.5" height="26"/>
+                            </pageControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ozZ-T2-H2T"/>
                         <color key="backgroundColor" name="DoneIn21Blue"/>
                         <constraints>
                             <constraint firstItem="c9J-gi-Ww3" firstAttribute="centerX" secondItem="YbX-zn-za1" secondAttribute="centerX" id="BUp-kb-qJa"/>
                             <constraint firstItem="c9J-gi-Ww3" firstAttribute="centerY" secondItem="YbX-zn-za1" secondAttribute="centerY" id="U4d-1y-gyx"/>
+                            <constraint firstItem="UNU-Ay-osj" firstAttribute="centerX" secondItem="YbX-zn-za1" secondAttribute="centerX" id="iPD-nG-ozB"/>
+                            <constraint firstItem="UNU-Ay-osj" firstAttribute="bottom" secondItem="ozZ-T2-H2T" secondAttribute="bottom" id="w4z-Fo-jJh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="QGU-J9-JTc"/>
                     <connections>
-                        <outlet property="focusCell" destination="82q-RB-Aov" id="B9Y-a0-xSr"/>
-                        <outlet property="mealsCell" destination="4PT-b1-Tp5" id="tPw-cY-4iC"/>
-                        <outlet property="waterCells" destination="40n-kN-QIi" id="DBg-Ai-sMz"/>
+                        <outlet property="startButton" destination="F71-13-JCv" id="6ev-X9-gbJ"/>
                         <outlet property="workoutCell" destination="cNQ-mA-O8Q" id="xtC-Gs-Tka"/>
                     </connections>
                 </viewController>

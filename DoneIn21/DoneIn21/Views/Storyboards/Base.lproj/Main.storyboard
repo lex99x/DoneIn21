@@ -277,8 +277,7 @@ when you're</string>
         <!--Navigation Controller-->
         <scene sceneID="Ela-dz-Ina">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Jme-fj-Fdx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="D5H-HR-gTi" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="D5H-HR-gTi" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="vzp-g8-hBr">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -289,6 +288,7 @@ when you're</string>
                         <segue destination="g7J-yF-gah" kind="relationship" relationship="rootViewController" id="CrA-dl-A8K"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jme-fj-Fdx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1720.289855072464" y="3051.5625"/>
         </scene>

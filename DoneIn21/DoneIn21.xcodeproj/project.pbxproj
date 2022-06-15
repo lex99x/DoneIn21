@@ -23,6 +23,7 @@
 		512DC990282D9EBF0056C81A /* CheckController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 512DC98F282D9EBF0056C81A /* CheckController.swift */; };
 		512DC993282D9EBF0056C81A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 512DC991282D9EBF0056C81A /* Main.storyboard */; };
 		512DC995282D9EC00056C81A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 512DC994282D9EC00056C81A /* Assets.xcassets */; };
+		5152B3BD285A272B006312DD /* Historic.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5152B3BC285A272B006312DD /* Historic.storyboard */; };
 		5170D9A5284C02F30085E262 /* FaqDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5170D9A4284C02F30085E262 /* FaqDetailController.swift */; };
 		5174D07E2857719300141A2B /* FAQ.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5174D07D2857719300141A2B /* FAQ.storyboard */; };
 		51D3BC55283C6A510001CAFE /* ExerciseDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51D3BC54283C6A510001CAFE /* ExerciseDetailController.swift */; };
@@ -32,6 +33,7 @@
 		51E78B59283EC21C005CF8F3 /* CardcellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E78B58283EC21C005CF8F3 /* CardcellView.swift */; };
 		51FDA2B82857910A00381914 /* FloatingPanel in Frameworks */ = {isa = PBXBuildFile; productRef = 51FDA2B72857910A00381914 /* FloatingPanel */; };
 		51FDA2BE2858B18600381914 /* ItsDoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FDA2BD2858B18600381914 /* ItsDoneButton.swift */; };
+		51FDA2C9285A0F6200381914 /* HistoricController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FDA2C8285A0F6200381914 /* HistoricController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +55,7 @@
 		512DC992282D9EBF0056C81A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		512DC994282D9EC00056C81A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		512DC999282D9EC00056C81A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5152B3BC285A272B006312DD /* Historic.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Historic.storyboard; sourceTree = "<group>"; };
 		5170D9A4284C02F30085E262 /* FaqDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaqDetailController.swift; sourceTree = "<group>"; };
 		5174D07D2857719300141A2B /* FAQ.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FAQ.storyboard; sourceTree = "<group>"; };
 		51D3BC54283C6A510001CAFE /* ExerciseDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseDetailController.swift; sourceTree = "<group>"; };
@@ -61,6 +64,7 @@
 		51E74222284BEA9A000AFD39 /* QuestionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetail.swift; sourceTree = "<group>"; };
 		51E78B58283EC21C005CF8F3 /* CardcellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardcellView.swift; sourceTree = "<group>"; };
 		51FDA2BD2858B18600381914 /* ItsDoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItsDoneButton.swift; sourceTree = "<group>"; };
+		51FDA2C8285A0F6200381914 /* HistoricController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +102,7 @@
 				5170D9A4284C02F30085E262 /* FaqDetailController.swift */,
 				51D3BC54283C6A510001CAFE /* ExerciseDetailController.swift */,
 				512DC98F282D9EBF0056C81A /* CheckController.swift */,
+				51FDA2C8285A0F6200381914 /* HistoricController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			children = (
 				179D5738284A5CD8006E9927 /* LaunchScreen.storyboard */,
 				512DC991282D9EBF0056C81A /* Main.storyboard */,
+				5152B3BC285A272B006312DD /* Historic.storyboard */,
 				173C8E2B284BA0290004513F /* Onboard.storyboard */,
 				5174D07D2857719300141A2B /* FAQ.storyboard */,
 			);
@@ -224,6 +230,7 @@
 				512DC993282D9EBF0056C81A /* Main.storyboard in Resources */,
 				5174D07E2857719300141A2B /* FAQ.storyboard in Resources */,
 				173C8E2C284BA0290004513F /* Onboard.storyboard in Resources */,
+				5152B3BD285A272B006312DD /* Historic.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +258,7 @@
 				51D5BAB7284BAFA8006205D7 /* FaqController.swift in Sources */,
 				512DC98E282D9EBF0056C81A /* SceneDelegate.swift in Sources */,
 				51E78B59283EC21C005CF8F3 /* CardcellView.swift in Sources */,
+				51FDA2C9285A0F6200381914 /* HistoricController.swift in Sources */,
 				17159387284D19CB00CAAE80 /* CustomHabitCell.swift in Sources */,
 				17159391284D88A500CAAE80 /* CustomButton.swift in Sources */,
 			);
@@ -391,7 +399,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XKBJR2ZWTW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DoneIn21/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Done In 21";
@@ -421,7 +429,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XKBJR2ZWTW;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DoneIn21/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Done In 21";

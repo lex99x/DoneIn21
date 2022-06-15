@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "floatingpanel",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/scenee/FloatingPanel",
+      "state" : {
+        "branch" : "master",
+        "revision" : "1ff3c28de8a0fe23264deb7a51e9861552e7e2be"
+      }
+    }
+  ],
+  "version" : 2
+}

@@ -11,7 +11,7 @@
         <!--Onboard View Controller-->
         <scene sceneID="j3p-e7-dYL">
             <objects>
-                <pageViewController storyboardIdentifier="OnboardViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ORq-nZ-PxI" customClass="OnboardViewController" customModule="DoneIn21" customModuleProvider="target" sceneMemberID="viewController"/>
+                <pageViewController storyboardIdentifier="OnboardViewController" autoresizesArchivedViewToFullSize="NO" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="ORq-nZ-PxI" customClass="OnboardViewController" customModule="DoneIn21" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W6s-Pe-F97" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-532" y="74"/>
@@ -19,7 +19,7 @@
         <!--View Controller-->
         <scene sceneID="NCy-eS-Tf6">
             <objects>
-                <viewController storyboardIdentifier="DiscoverViewController" modalTransitionStyle="partialCurl" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="D40-t7-qlA" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DiscoverViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="D40-t7-qlA" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5Md-q5-Hos">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -354,6 +354,7 @@ new SELF in 21 days?</string>
                                             <color key="baseBackgroundColor" name="DoneIn21Green"/>
                                         </buttonConfiguration>
                                         <connections>
+                                            <action selector="btnStartClicked:" destination="clE-UN-jFC" eventType="touchUpInside" id="VpD-3w-JoC"/>
                                             <segue destination="Tvk-SS-SAQ" kind="show" id="f2N-dS-v93"/>
                                         </connections>
                                     </button>

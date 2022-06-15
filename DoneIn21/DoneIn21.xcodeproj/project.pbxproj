@@ -16,6 +16,8 @@
 		17159399284DB78300CAAE80 /* DayModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17159398284DB78300CAAE80 /* DayModel.swift */; };
 		1715939B284DB8FE00CAAE80 /* DayDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1715939A284DB8FE00CAAE80 /* DayDAO.swift */; };
 		173813D52859864000857286 /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173813D42859864000857286 /* OnboardViewController.swift */; };
+		173813D7285A2B6500857286 /* LaunchDummy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 173813D6285A2B6500857286 /* LaunchDummy.storyboard */; };
+		173813D9285A2D4F00857286 /* LaunchDummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 173813D8285A2D4F00857286 /* LaunchDummyViewController.swift */; };
 		173C8E2C284BA0290004513F /* Onboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 173C8E2B284BA0290004513F /* Onboard.storyboard */; };
 		179D5739284A5CD8006E9927 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 179D5738284A5CD8006E9927 /* LaunchScreen.storyboard */; };
 		51058613284509F4005D25C0 /* CardDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51058612284509F4005D25C0 /* CardDetailModel.swift */; };
@@ -47,6 +49,8 @@
 		17159398284DB78300CAAE80 /* DayModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayModel.swift; sourceTree = "<group>"; };
 		1715939A284DB8FE00CAAE80 /* DayDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDAO.swift; sourceTree = "<group>"; };
 		173813D42859864000857286 /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
+		173813D6285A2B6500857286 /* LaunchDummy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchDummy.storyboard; sourceTree = "<group>"; };
+		173813D8285A2D4F00857286 /* LaunchDummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchDummyViewController.swift; sourceTree = "<group>"; };
 		173C8E2B284BA0290004513F /* Onboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Onboard.storyboard; sourceTree = "<group>"; };
 		179D5738284A5CD8006E9927 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51058612284509F4005D25C0 /* CardDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailModel.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 				51D3BC54283C6A510001CAFE /* ExerciseDetailController.swift */,
 				512DC98F282D9EBF0056C81A /* CheckController.swift */,
 				51FDA2C8285A0F6200381914 /* HistoricController.swift */,
+				173813D8285A2D4F00857286 /* LaunchDummyViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 				5152B3BC285A272B006312DD /* Historic.storyboard */,
 				173C8E2B284BA0290004513F /* Onboard.storyboard */,
 				5174D07D2857719300141A2B /* FAQ.storyboard */,
+				173813D6285A2B6500857286 /* LaunchDummy.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -232,6 +238,7 @@
 				512DC995282D9EC00056C81A /* Assets.xcassets in Resources */,
 				512DC993282D9EBF0056C81A /* Main.storyboard in Resources */,
 				5174D07E2857719300141A2B /* FAQ.storyboard in Resources */,
+				173813D7285A2B6500857286 /* LaunchDummy.storyboard in Resources */,
 				173C8E2C284BA0290004513F /* Onboard.storyboard in Resources */,
 				5152B3BD285A272B006312DD /* Historic.storyboard in Resources */,
 			);
@@ -254,6 +261,7 @@
 				51FDA2BE2858B18600381914 /* ItsDoneButton.swift in Sources */,
 				512DC990282D9EBF0056C81A /* CheckController.swift in Sources */,
 				5170D9A5284C02F30085E262 /* FaqDetailController.swift in Sources */,
+				173813D9285A2D4F00857286 /* LaunchDummyViewController.swift in Sources */,
 				173813D52859864000857286 /* OnboardViewController.swift in Sources */,
 				51E74223284BEA9A000AFD39 /* QuestionDetail.swift in Sources */,
 				51D3BC55283C6A510001CAFE /* ExerciseDetailController.swift in Sources */,

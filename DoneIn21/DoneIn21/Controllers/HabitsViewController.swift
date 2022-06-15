@@ -33,4 +33,10 @@ class HabitsViewController: UIViewController {
         
     }
 
+    @IBAction func btnStartClicked(_ sender: Any) {
+    
+        UserDefaults.standard.set(true, forKey: "isHabitChoosen")
+    
+    }
+    
 }

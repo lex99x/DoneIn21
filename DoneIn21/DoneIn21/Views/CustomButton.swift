@@ -11,19 +11,12 @@ class CustomButton: UIButton {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setRoundedCorners() 
         setShadows()
     }
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
-        setRoundedCorners()
         setShadows()
-    }
-    
-    private func setRoundedCorners() {
-        layer.cornerRadius = 18
-//        clipsToBounds = true
     }
     
     private func setShadows() {
@@ -38,5 +31,17 @@ class CustomButton: UIButton {
         layer.rasterizationScale = UIScreen.main.scale
         
     }
+    
+    override var isEnabled: Bool {
+        
+        didSet {
+            
+            if !isEnabled {
+//                self.backgroundColor = UIColor(named: "DoneIn21Gray")
+            }
+            
+        }
 
+    }
+    
 }

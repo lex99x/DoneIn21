@@ -107,15 +107,7 @@ when you're</string>
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="d7f-Ix-rQN">
-                        <barButtonItem key="rightBarButtonItem" title="question" style="plain" id="oC8-yg-Pz7">
-                            <imageReference key="image" image="questionmark.circle" catalog="system" symbolScale="large"/>
-                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <action selector="FaqButton:" destination="g7J-yF-gah" id="U5k-bu-azf"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="d7f-Ix-rQN"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="itsDoneButton" destination="zFV-ZU-ALH" id="4J3-bk-14N"/>
@@ -296,7 +288,6 @@ when you're</string>
     <resources>
         <image name="clock.arrow.circlepath" catalog="system" width="128" height="110"/>
         <image name="flexao" width="245" height="117"/>
-        <image name="questionmark.circle" catalog="system" width="128" height="121"/>
         <image name="questionmark.circle.fill" catalog="system" width="128" height="121"/>
         <image name="star.circle.fill" catalog="system" width="128" height="121"/>
         <namedColor name="DoneIn21Blue">

@@ -13,9 +13,11 @@ class DayModel {
     private var checkHour: Int
     private var checkMinute: Int
     
-    init(dayNumber: Int, checkFlag: Bool) {
+    init(dayNumber: Int, checkFlag: Bool, checkHour: Int, checkMinute: Int) {
         self.dayNumber = dayNumber
         self.checkFlag = checkFlag
+        self.checkHour = checkHour
+        self.checkMinute = checkMinute
     }
     
     public func setDayNumber(dayNumber: Int) {

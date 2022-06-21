@@ -36,6 +36,20 @@ class HabitsViewController: UIViewController {
     @IBAction func btnStartClicked(_ sender: Any) {
     
         UserDefaults.standard.set(true, forKey: "isHabitChoosen")
+        
+        var checkDays: [Bool] = []
+        
+        for _ in 1 ... 21 {
+            
+            let day = false
+//            let day = DayModel(dayNumber: i, checkFlag: false, checkHour: -1, checkMinute: -1)
+            checkDays.append(day)
+            
+        }
+        
+        let defaults = UserDefaults.standard
+        
+        defaults.set(checkDays, forKey: "checkDays")
     
     }
     

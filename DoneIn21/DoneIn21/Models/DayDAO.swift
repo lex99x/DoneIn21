@@ -9,8 +9,8 @@ import CoreData
 
 class DayDAO: DayModel {
     
-    override init(dayNumber: Int, checkFlag: Bool) {
-        super.init(dayNumber: dayNumber, checkFlag: checkFlag)
+    override init(dayNumber: Int, checkFlag: Bool, checkHour: Int, checkMinute: Int) {
+        super.init(dayNumber: dayNumber, checkFlag: checkFlag, checkHour: 0, checkMinute: 0)
     }
     
     public func saveDay(appDelegate: AppDelegate) {

@@ -3,6 +3,9 @@ import FloatingPanel
 
 class Check: UIViewController,FloatingPanelControllerDelegate {
     
+//    private var checkDays: [DayModel] = []
+    private var checkDays: [Bool] = []
+    
     @IBOutlet weak var itsDoneButton: UIButton!
     
     let shape = CAShapeLayer()
@@ -13,6 +16,9 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        checkDays = UserDefaults.standard.object(forKey: "checkDays") as? [Bool] ?? [Bool]()
+        print(checkDays)
 //
 //        let fpc = FloatingPanelController()
 //        let storyBoard: UIStoryboard = UIStoryboard(name: "Historic", bundle: nil)

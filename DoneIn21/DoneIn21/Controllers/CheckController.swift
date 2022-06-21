@@ -13,16 +13,26 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
         
     override func viewDidLoad() {
         super.viewDidLoad()
+//
+//        let fpc = FloatingPanelController()
+//        let storyBoard: UIStoryboard = UIStoryboard(name: "Historic", bundle: nil)
+//        let contentVC = storyBoard.instantiateViewController(withIdentifier: "Historic") as! HistoricController
+//        fpc.set(contentViewController: contentVC)
+//        fpc.isRemovalInteractionEnabled = false
+//        fpc.layout = MyFloatingPanelLayout()
+//        self.present(fpc, animated: true, completion: nil)
         
-        let fpc = FloatingPanelController()
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Historic", bundle: nil)
-        let contentVC = storyBoard.instantiateViewController(withIdentifier: "Historic") as! HistoricController
-        fpc.set(contentViewController: contentVC)
-        fpc.isRemovalInteractionEnabled = false
-        fpc.layout = MyFloatingPanelLayout()
-        self.present(fpc, animated: true, completion: nil)
+            let fpc = FloatingPanelController()
+
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Historic", bundle: nil)
+            let contentVC = storyBoard.instantiateViewController(withIdentifier: "Historic") as! HistoricController
+             fpc.set(contentViewController: contentVC)
+             fpc.layout = MyFloatingPanelLayout()
+
+             fpc.addPanel(toParent: self)
+
         
-        itsDoneButton.layer.zPosition = 1
+        itsDoneButton.layer.zPosition = 0
         let circlePath = UIBezierPath(arcCenter: .zero, radius: 120, startAngle: -(.pi / 2), endAngle: .pi * 2, clockwise: true)
         
         trackshape.path = circlePath.cgPath
@@ -31,7 +41,7 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
         trackshape.strokeColor = UIColor.systemGray3.cgColor
         trackshape.lineCap = .round
         trackshape.position = CGPoint(x: 195, y: 490)
-        trackshape.zPosition = 0
+        trackshape.zPosition = -1
         view.layer.addSublayer(trackshape)
         
         pulsatingLayer = CAShapeLayer()
@@ -39,7 +49,7 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
         pulsatingLayer.strokeColor = UIColor.clear.cgColor
         pulsatingLayer.lineWidth = 10
         pulsatingLayer.fillColor = UIColor.clear.cgColor
-        pulsatingLayer.zPosition = 0
+        pulsatingLayer.zPosition = -1
         pulsatingLayer.lineCap = .round
         pulsatingLayer.position = CGPoint(x: 195, y: 490)
         view.layer.addSublayer(pulsatingLayer)
@@ -53,7 +63,7 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
         shape.strokeEnd = 0
         shape.lineCap = .round
         shape.position = CGPoint(x: 195, y: 490)
-        shape.zPosition = 0
+        shape.zPosition = -1
         view.layer.addSublayer(shape)
         
         
@@ -124,6 +134,7 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
 class MyFloatingPanelLayout: FloatingPanelLayout {
     let position: FloatingPanelPosition = .bottom
     let initialState: FloatingPanelState = .tip
+    
     var anchors: [FloatingPanelState: FloatingPanelLayoutAnchoring] {
         return [
             .full: FloatingPanelLayoutAnchor(absoluteInset: 16.0, edge: .top, referenceGuide: .safeArea),

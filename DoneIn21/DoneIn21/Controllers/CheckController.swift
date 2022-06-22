@@ -13,7 +13,7 @@ class Check: UIViewController, FloatingPanelControllerDelegate {
     let shape = CAShapeLayer()
     let trackshape = CAShapeLayer()
     var pulsatingLayer: CAShapeLayer!
-    var pulsatingLayer2:CAShapeLayer!
+    var pulsatingLayer2: CAShapeLayer!
     
     var isGrenn = false
     var daysCount = 1

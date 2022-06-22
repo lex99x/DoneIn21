@@ -2,7 +2,7 @@ import UIKit
 import FloatingPanel
 import Foundation
 
-class Check: UIViewController,FloatingPanelControllerDelegate {
+class Check: UIViewController, FloatingPanelControllerDelegate {
     
     //    private var checkDays: [DayModel] = []
     private var checkDays: [Bool] = []
@@ -106,7 +106,6 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
         
     }
     
-    
     @IBAction func Itsdone(_ sender: Any) {
         
         animatePulsatingLayer()
@@ -161,6 +160,7 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
         animation2.repeatCount = 1
         pulsatingLayer.add(animation2, forKey: "pulsing")
     }
+    
     private func animatePulsatingLayer2(){
         let animation3 = CABasicAnimation(keyPath: "transform.scale")
         animation3.toValue = 1.1
@@ -172,6 +172,7 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
     }
     
 }
+
 class MyFloatingPanelLayout: FloatingPanelLayout {
     let position: FloatingPanelPosition = .bottom
     let initialState: FloatingPanelState = .tip

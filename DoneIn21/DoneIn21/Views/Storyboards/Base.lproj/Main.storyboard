@@ -41,7 +41,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjp-um-Epa">
-                                <rect key="frame" x="36" y="216" width="328" height="76.5"/>
+                                <rect key="frame" x="36" y="216" width="321" height="76.5"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Press ">
                                         <attributes>
@@ -50,7 +50,7 @@
                                         </attributes>
                                     </fragment>
                                     <fragment>
-                                        <string key="content">the button bellow
+                                        <string key="content">the button below
 when you're</string>
                                         <attributes>
                                             <font key="NSFont" metaFont="system" size="32"/>

@@ -23,6 +23,8 @@ class HistoricController: UIViewController, UICollectionViewDataSource {
         
         let checkDays = UserDefaults.standard.object(forKey: "checkDays") as? [Bool] ?? [Bool]()
         
+        print(checkDays)
+        
         if(checkDays[indexPath.item]) {
             cell.imageView.image = UIImage(named: "day\(String(indexPath.item + 1))verde")
         } else {

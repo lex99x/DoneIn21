@@ -5,41 +5,52 @@ import FloatingPanel
 import Foundation
 
 class Check: UIViewController,FloatingPanelControllerDelegate {
-
-//    private var checkDays: [DayModel] = []
+    
+    //    private var checkDays: [DayModel] = []
     private var checkDays: [Bool] = []
-
+    
     @IBOutlet weak var itsDoneButton: UIButton!
     @IBOutlet weak var ondeIntwentyOne: UILabel!
-
+    
     let shape = CAShapeLayer()
     let trackshape = CAShapeLayer()
     var pulsatingLayer: CAShapeLayer!
     var pulsatingLayer2:CAShapeLayer!
-
+    
     var isGrenn = false
     var daysCount = 1
-
+    
+    private var currentDay = 1
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        currentDay = UserDefaults.standard.integer(forKey: "currentDay")
+        
+        if currentDay == 0 {
+            currentDay = 1
+        }
+        
+        ondeIntwentyOne.text = "Day \(currentDay) of 21 "
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        
         checkDays = UserDefaults.standard.object(forKey: "checkDays") as? [Bool] ?? [Bool]()
-
-            
-
-            let fpc = FloatingPanelController()
-
-            let storyBoard: UIStoryboard = UIStoryboard(name: "Historic", bundle: nil)
-            let contentVC = storyBoard.instantiateViewController(withIdentifier: "Historic") as! HistoricController
-             fpc.set(contentViewController: contentVC)
-             fpc.layout = MyFloatingPanelLayout()
-
-             fpc.addPanel(toParent: self)
-
+        
+        let fpc = FloatingPanelController()
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Historic", bundle: nil)
+        let contentVC = storyBoard.instantiateViewController(withIdentifier: "Historic") as! HistoricController
+        fpc.set(contentViewController: contentVC)
+        fpc.layout = MyFloatingPanelLayout()
+        
+        fpc.addPanel(toParent: self)
+        
         itsDoneButton.layer.zPosition = 0
         let circlePath = UIBezierPath(arcCenter: .zero, radius: 120, startAngle: -(.pi / 2), endAngle: .pi * 2, clockwise: true)
-
+        
         trackshape.path = circlePath.cgPath
         trackshape.fillColor = UIColor.clear.cgColor
         trackshape.lineWidth = 20
@@ -48,7 +59,7 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
         trackshape.position = CGPoint(x: 195, y: 490)
         trackshape.zPosition = -1
         view.layer.addSublayer(trackshape)
-
+        
         pulsatingLayer = CAShapeLayer()
         pulsatingLayer.path = circlePath.cgPath
         pulsatingLayer.strokeColor = UIColor.clear.cgColor
@@ -58,9 +69,7 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
         pulsatingLayer.lineCap = .round
         pulsatingLayer.position = CGPoint(x: 195, y: 490)
         view.layer.addSublayer(pulsatingLayer)
-
-
-
+        
         shape.path = circlePath.cgPath
         shape.lineWidth = 20
         shape.strokeColor = UIColor.systemGreen.cgColor
@@ -70,15 +79,18 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
         shape.position = CGPoint(x: 195, y: 490)
         shape.zPosition = -1
         view.layer.addSublayer(shape)
+        
         Task {
             for await _ in NotificationCenter.default.notifications(named: .NSCalendarDayChanged) {
-                checkDays[daysCount-1] = isGrenn
+                
+                checkDays[daysCount - 1] = isGrenn
+                UserDefaults.standard.set(checkDays, forKey: "checkDays")
+                
                 daysCount += 1
+                
                 if daysCount == 22 {
                     daysCount = 1
                 }
-                
-                ondeIntwentyOne.text = "Day \(daysCount) of 21 "
                 
                 isGrenn = false
                 itsDoneButton.isEnabled = true
@@ -87,27 +99,25 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
                 shape.fillColor =  UIColor.clear.cgColor
                 shape.strokeColor = UIColor.clear.cgColor
                 
-//                print(checkDays)
+                currentDay += 1
+                UserDefaults.standard.set(currentDay, forKey: "currentDay")
                 
-                UserDefaults.standard.set(checkDays, forKey: "checkDays")
+                ondeIntwentyOne.text = "Day \(currentDay) of 21"
                 
             }
         }
-
+        
     }
-
-
+    
+    
     @IBAction func Itsdone(_ sender: Any) {
-
+        
         animatePulsatingLayer()
         animatePulsatingLayer2()
-//        shape.fillColor =  UIColor(named: "DoneIn21Blue")!.cgColor
-
-        if isGrenn {
-
-        } else {
-
-
+        //        shape.fillColor =  UIColor(named: "DoneIn21Blue")!.cgColor
+        
+        if !isGrenn {
+            
             shape.strokeColor = UIColor.systemGreen.cgColor
             let animation = CABasicAnimation(keyPath: "strokeEnd")
             animation.toValue = 1
@@ -115,15 +125,15 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
             animation.isRemovedOnCompletion = false
             animation.fillMode = .forwards
             shape.add(animation, forKey: "completing")
-
+            
             isGrenn = true
             itsDoneButton.isEnabled = false
             itsDoneButton.titleLabel?.textColor = UIColor.white
-
-            }
-
+            
         }
-
+        
+    }
+    
     private func animatePulsatingLayer(){
         pulsatingLayer.strokeColor =  UIColor(named: "DoneIn21Blue")!.cgColor
         let animation2 = CABasicAnimation(keyPath: "transform.scale")
@@ -143,12 +153,12 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
         animation3.repeatCount = 1
         shape.add(animation3, forKey: "pulsing2")
     }
-
+    
 }
 class MyFloatingPanelLayout: FloatingPanelLayout {
     let position: FloatingPanelPosition = .bottom
     let initialState: FloatingPanelState = .tip
-
+    
     var anchors: [FloatingPanelState: FloatingPanelLayoutAnchoring] {
         return [
             .full: FloatingPanelLayoutAnchor(absoluteInset: 16.0, edge: .top, referenceGuide: .safeArea),
@@ -157,6 +167,3 @@ class MyFloatingPanelLayout: FloatingPanelLayout {
         ]
     }
 }
-
-
-

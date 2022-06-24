@@ -87,8 +87,10 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
                 shape.fillColor =  UIColor.clear.cgColor
                 shape.strokeColor = UIColor.clear.cgColor
                 
-
-                print(checkDays)
+//                print(checkDays)
+                
+                UserDefaults.standard.set(checkDays, forKey: "checkDays")
+                
             }
         }
 

@@ -39,13 +39,7 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
         
         checkDays = UserDefaults.standard.object(forKey: "checkDays") as? [Bool] ?? [Bool]()
         
-        let fpc = FloatingPanelController()
-        
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Historic", bundle: nil)
-        let contentVC = storyBoard.instantiateViewController(withIdentifier: "Historic") as! HistoricController
-        fpc.set(contentViewController: contentVC)
-        fpc.layout = MyFloatingPanelLayout()
-        
+        var fpc = getFloatingPanelController()
         fpc.addPanel(toParent: self)
         
         itsDoneButton.layer.zPosition = 0
@@ -104,6 +98,11 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
                 
                 ondeIntwentyOne.text = "Day \(currentDay) of 21"
                 
+                fpc.removePanelFromParent(animated: false)
+                
+                fpc = getFloatingPanelController()
+                fpc.addPanel(toParent: self)
+                
             }
         }
         
@@ -131,6 +130,19 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
             itsDoneButton.titleLabel?.textColor = UIColor.white
             
         }
+        
+    }
+    
+    private func getFloatingPanelController() -> FloatingPanelController {
+        
+        let fpc = FloatingPanelController()
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Historic", bundle: nil)
+        let contentVC = storyBoard.instantiateViewController(withIdentifier: "Historic") as! HistoricController
+        fpc.set(contentViewController: contentVC)
+        fpc.layout = MyFloatingPanelLayout()
+        
+        return fpc
         
     }
     

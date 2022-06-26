@@ -1,5 +1,3 @@
-
-
 import UIKit
 import FloatingPanel
 import Foundation
@@ -21,6 +19,7 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
     var daysCount = 1
     
     private var currentDay = 1
+    private var fpc: FloatingPanelController!
     
     override func viewWillAppear(_ animated: Bool) {
         
@@ -39,7 +38,7 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
         
         checkDays = UserDefaults.standard.object(forKey: "checkDays") as? [Bool] ?? [Bool]()
         
-        var fpc = getFloatingPanelController()
+        fpc = getFloatingPanelController()
         fpc.addPanel(toParent: self)
         
         itsDoneButton.layer.zPosition = 0
@@ -99,7 +98,6 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
                 ondeIntwentyOne.text = "Day \(currentDay) of 21"
                 
                 fpc.removePanelFromParent(animated: false)
-                
                 fpc = getFloatingPanelController()
                 fpc.addPanel(toParent: self)
                 
@@ -117,6 +115,9 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
         
         if !isGrenn {
             
+            checkDays[currentDay - 1] = true
+            UserDefaults.standard.set(checkDays, forKey: "checkDays")
+            
             shape.strokeColor = UIColor.systemGreen.cgColor
             let animation = CABasicAnimation(keyPath: "strokeEnd")
             animation.toValue = 1
@@ -128,6 +129,10 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
             isGrenn = true
             itsDoneButton.isEnabled = false
             itsDoneButton.titleLabel?.textColor = UIColor.white
+
+            fpc.removePanelFromParent(animated: false)
+            fpc = getFloatingPanelController()
+            fpc.addPanel(toParent: self)
             
         }
         

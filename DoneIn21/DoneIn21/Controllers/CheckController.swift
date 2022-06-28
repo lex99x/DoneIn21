@@ -83,7 +83,7 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
         Task {
             for await _ in NotificationCenter.default.notifications(named: .NSCalendarDayChanged) {
                 
-                checkDays[daysCount - 1] = isGrenn
+                checkDays[currentDay - 1] = isGrenn
                 UserDefaults.standard.set(checkDays, forKey: "checkDays")
                 
                 daysCount += 1

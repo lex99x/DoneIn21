@@ -26,7 +26,7 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
 
         checkDays = UserDefaults.standard.object(forKey: "checkDays") as? [Bool] ?? [Bool]()
 
-
+            
 
             let fpc = FloatingPanelController()
 

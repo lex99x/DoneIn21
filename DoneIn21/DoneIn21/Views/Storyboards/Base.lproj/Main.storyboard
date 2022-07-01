@@ -271,6 +271,7 @@ when you're</string>
             <point key="canvasLocation" x="-1720.289855072464" y="3051.5625"/>
         </scene>
     </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="clock.arrow.circlepath" catalog="system" width="128" height="110"/>
         <image name="flexao" width="245" height="117"/>

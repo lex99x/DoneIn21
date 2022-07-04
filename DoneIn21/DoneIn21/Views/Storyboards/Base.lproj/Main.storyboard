@@ -25,10 +25,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kHJ-yc-aMe">
-                                <rect key="frame" x="299" y="108" width="42" height="42"/>
+                                <rect key="frame" x="348" y="108" width="42" height="42"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="AKr-fJ-15n"/>
-                                    <constraint firstAttribute="width" constant="42" id="Cs9-ti-chN"/>
+                                    <constraint firstAttribute="height" constant="42" id="gEx-Y0-Yhp"/>
+                                    <constraint firstAttribute="width" constant="42" id="w98-e5-HgP"/>
                                 </constraints>
                                 <color key="tintColor" name="DoneIn21Blue"/>
                                 <state key="normal" title="Button"/>
@@ -39,19 +39,6 @@
                                 <connections>
                                     <segue destination="gz7-lY-hFm" kind="show" id="auA-05-4AC"/>
                                 </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bK-BZ-wGX">
-                                <rect key="frame" x="348" y="108" width="42" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="1Uz-g7-UXh"/>
-                                    <constraint firstAttribute="width" constant="42" id="vwT-oe-NM4"/>
-                                </constraints>
-                                <color key="tintColor" name="DoneIn21Orange"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="">
-                                    <imageReference key="image" image="star.circle.fill" catalog="system" symbolScale="large"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="32"/>
-                                </buttonConfiguration>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjp-um-Epa">
                                 <rect key="frame" x="36" y="216" width="328" height="76.5"/>
@@ -86,7 +73,7 @@ when you're</string>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Its Done!">
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="32"/>
-                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseForegroundColor" systemColor="systemGray2Color"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="Itsdone:" destination="g7J-yF-gah" eventType="touchUpInside" id="aYC-1b-l7n"/>
@@ -96,14 +83,12 @@ when you're</string>
                         <viewLayoutGuide key="safeArea" id="H31-k3-llE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="kHJ-yc-aMe" firstAttribute="top" secondItem="H31-k3-llE" secondAttribute="top" constant="20" id="1rC-ve-ybI"/>
+                            <constraint firstItem="H31-k3-llE" firstAttribute="trailing" secondItem="kHJ-yc-aMe" secondAttribute="trailing" constant="24" id="158-tc-PhF"/>
                             <constraint firstItem="cjp-um-Epa" firstAttribute="top" secondItem="62B-dy-6Ia" secondAttribute="bottom" constant="70" id="5Cm-aR-Wlf"/>
                             <constraint firstItem="62B-dy-6Ia" firstAttribute="leading" secondItem="H31-k3-llE" secondAttribute="leading" constant="24" id="7av-2e-i5p"/>
+                            <constraint firstItem="kHJ-yc-aMe" firstAttribute="top" secondItem="H31-k3-llE" secondAttribute="top" constant="20" id="KHk-Jt-3Xw"/>
                             <constraint firstItem="62B-dy-6Ia" firstAttribute="top" secondItem="H31-k3-llE" secondAttribute="top" constant="20" id="bJT-4w-qNj"/>
-                            <constraint firstItem="3bK-BZ-wGX" firstAttribute="top" secondItem="H31-k3-llE" secondAttribute="top" constant="20" id="dQW-ck-Mh6"/>
-                            <constraint firstItem="3bK-BZ-wGX" firstAttribute="leading" secondItem="kHJ-yc-aMe" secondAttribute="trailing" constant="7" id="fD1-lh-7Ak"/>
                             <constraint firstItem="cjp-um-Epa" firstAttribute="leading" secondItem="H31-k3-llE" secondAttribute="leading" constant="36" id="hM7-g5-xtG"/>
-                            <constraint firstItem="H31-k3-llE" firstAttribute="trailing" secondItem="3bK-BZ-wGX" secondAttribute="trailing" constant="24" id="zmJ-S9-fIk"/>
                         </constraints>
                     </view>
                     <toolbarItems/>
@@ -290,7 +275,6 @@ when you're</string>
         <image name="clock.arrow.circlepath" catalog="system" width="128" height="110"/>
         <image name="flexao" width="245" height="117"/>
         <image name="questionmark.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="star.circle.fill" catalog="system" width="128" height="121"/>
         <namedColor name="DoneIn21Blue">
             <color red="0.12549019607843137" green="0.23529411764705882" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
@@ -299,6 +283,9 @@ when you're</string>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

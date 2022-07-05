@@ -25,7 +25,6 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
 
 
         checkDays = UserDefaults.standard.object(forKey: "checkDays") as? [Bool] ?? [Bool]()
-        print(checkDays)
 
 
 
@@ -73,18 +72,23 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
         view.layer.addSublayer(shape)
         Task {
             for await _ in NotificationCenter.default.notifications(named: .NSCalendarDayChanged) {
+                checkDays[daysCount-1] = isGrenn
                 daysCount += 1
+                if daysCount == 22 {
+                    daysCount = 1
+                }
+                
                 ondeIntwentyOne.text = "Day \(daysCount) of 21 "
-
+                
                 isGrenn = false
                 itsDoneButton.isEnabled = true
-
+                
                 pulsatingLayer.strokeColor = UIColor.clear.cgColor
                 shape.fillColor =  UIColor.clear.cgColor
                 shape.strokeColor = UIColor.clear.cgColor
+                
 
-
-
+                print(checkDays)
             }
         }
 

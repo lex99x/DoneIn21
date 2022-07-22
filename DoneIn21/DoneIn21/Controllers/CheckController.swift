@@ -1,5 +1,6 @@
 import UIKit
 import FloatingPanel
+import Foundation
 
 class Check: UIViewController,FloatingPanelControllerDelegate {
     
@@ -7,26 +8,24 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
     private var checkDays: [Bool] = []
     
     @IBOutlet weak var itsDoneButton: UIButton!
+    @IBOutlet weak var ondeIntwentyOne: UILabel!
     
     let shape = CAShapeLayer()
     let trackshape = CAShapeLayer()
     var pulsatingLayer: CAShapeLayer!
     var pulsatingLayer2:CAShapeLayer!
+    
     var isGrenn = false
-        
+    var daysCount = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+
         
         checkDays = UserDefaults.standard.object(forKey: "checkDays") as? [Bool] ?? [Bool]()
         print(checkDays)
-//
-//        let fpc = FloatingPanelController()
-//        let storyBoard: UIStoryboard = UIStoryboard(name: "Historic", bundle: nil)
-//        let contentVC = storyBoard.instantiateViewController(withIdentifier: "Historic") as! HistoricController
-//        fpc.set(contentViewController: contentVC)
-//        fpc.isRemovalInteractionEnabled = false
-//        fpc.layout = MyFloatingPanelLayout()
-//        self.present(fpc, animated: true, completion: nil)
+     
+      
         
             let fpc = FloatingPanelController()
 
@@ -71,12 +70,19 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
         shape.position = CGPoint(x: 195, y: 490)
         shape.zPosition = -1
         view.layer.addSublayer(shape)
-        
-        
-        
+        Task {
+            for await _ in NotificationCenter.default.notifications(named: .NSCalendarDayChanged) {
+                daysCount += 1
+                ondeIntwentyOne.text = "Day \(daysCount) of 21 "
+                isGrenn = false
+                itsDoneButton.isEnabled = true
+            
+            }
+        }
+   
     }
-    
-    
+
+   
     @IBAction func Itsdone(_ sender: Any) {
         
         animatePulsatingLayer()
@@ -86,9 +92,7 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
             
         } else {
             
-            
-            
-            
+         
             shape.strokeColor = UIColor.systemGreen.cgColor
             
             let animation = CABasicAnimation(keyPath: "strokeEnd")
@@ -98,23 +102,13 @@ class Check: UIViewController,FloatingPanelControllerDelegate {
             animation.fillMode = .forwards
             shape.add(animation, forKey: "completing")
             
-            
-            
             isGrenn = true
             itsDoneButton.isEnabled = false
             
-            let timer = Timer.scheduledTimer(withTimeInterval: 2.0, repeats: false) { timer in
-                print("timerAtivado")
-                
-                self.itsDoneButton.isEnabled = true
-                
-                self.isGrenn = false
-                
-                
             }
             
         }
-    }
+    
     private func animatePulsatingLayer(){
         pulsatingLayer.strokeColor = UIColor.systemGreen.cgColor
         let animation2 = CABasicAnimation(keyPath: "transform.scale")
